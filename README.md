@@ -1,4 +1,6 @@
-# Links-Webpage
+# Hi!
 
-This is the repo for a project in my ITGS class. If you're seeing this on Github.com and you aren't me...
-Well, you're wrong, and you should go to where the site is hosted on github.io. I'll update the readme once I get it hosted.
+I'm Aidan, a high school junior in Florida! This repository is going to house all of my web development adventures (or at least the stuff I'm comfortable putting online). Eventually it'll have a separate dev branch or some way of separating dev code from production code. It'll probably end up being a special folder since I'm not sure if I can point to a separate branch with BitBucket hosting. It'll also have a branch for Material Theme that will get merged into Master once it's complete. Material Theme is a LOT harder to develop in since it HATES being hosted from a CDN for some reason. 
+
+Right now the most striking thing is the difference between the Landing Page site and the rest of them. The simple fact is that I ran out of time to theme the page. I'll get round to it eventually. For now just deal with the raw HTML. Eventually it'll become a full-featured about page with an aside thingy that will point to the different sites in the way thst the current Landing Page does.
+Anywho, that's just about it! Hopefully you like what you see!
