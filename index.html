@@ -1,6 +1,9 @@
 <html>
 <head>
 <title>Landing Page</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <style>
 .body-text {
@@ -9,7 +12,20 @@
 
 </style>
 <body>
-<div class="body-text">
+<!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+    <div class="body-text">
     <h1>Landing Page</h1>
     <br> 
         This is a page where I intend people to land when/if they find my site! Included will be links to all of the stuff that I post to my BitBucket repository (I did have a GitHub but my school blocks it [Thanks FLDOE!]. They do not bock BitBucket however, so here I am). 
@@ -18,6 +34,8 @@
         <li><a href="/Links-Webpage">My links webpage!</a></li>
         <li><a href="/Vanity-Page">Vanity Page and Stuff</a></li>
     </ul>
+</div></div>
+  </main>
 </div>
 
 
