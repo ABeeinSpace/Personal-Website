@@ -21,6 +21,11 @@
 html {
   scroll-behavior:smooth;
 }
+
+.about-card {
+  position:absolute;
+  right:0;
+}
 </style>
 <body>
 <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
@@ -40,6 +45,35 @@ html {
     <br> 
         This is a page where I intend to have a homepage of sorts for a web portfolio! Included will be links to all of the stuff that I post to my BitBucket repository (I did have a GitHub but my school blocks it [Thanks FLDOE!]. They do not bock BitBucket however, so here I am). Eventually this page will scroll for ages and there will be stuff on the side to jump to. The next goal is to get it to smooth-scroll to them, but that probably needs some JavaScript, which I don't know whatsoever. It'll be repurposed StackExchange code probably. :P
     <br>
+    <!-- Square card -->
+<style>
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+}
+</style>
+
+<div class="demo-card-square mdl-card mdl-shadow--2dp" id="about-card">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text">About Me!</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    I'm a Junior in high school in Florida! This is a website where I'll put up my escapades in web development and other shenanigans. My BitBucket will house web development and my GitHub will house other development projects 
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <!-- Button Chip -->
+<button type="button" class="mdl-chip">
+    <a href="www.github.com/abeeinspace" span class="mdl-chip__text">My GitHub</a></span>
+</button>
+  </div>
+</div>
+
+
 </div></div>
   </main>
 </div>
