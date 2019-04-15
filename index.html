@@ -1,84 +1,97 @@
-<html>
-<head>
-<title>Aidan's iPortfolio</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-amber.min.css">
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-</head>
-<style>
-.body-text {
-    margin:20px;
-}
-
-.mdl-layout__drawer {
-  background:lightblue;
-}
-
-.header {
-  color:rgb(255, 193, 7);
-}
-
-html {
-  scroll-behavior:smooth;
-}
-
-.about-card {
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>Aidan's iPortfolio</title>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-amber.min.css">
+ <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+ </head>
+ <style>
+ .page-content {
+     margin:20px;
+	 background-color: white
+ }
+ 
+ .mdl-layout--fixed-drawer {
+    border-color:transparent;
+	background-image("F:\Users\415750\Downloads\josh-gordon-1475759-unsplash.jpg") center / cover;
+	 }
+ 
+ .header {
+   color:rgb(255, 193, 7);
+ }
+ 
+ html {
+   scroll-behavior:smooth;
+ }
+ 
+ #about-card {
   position: relative;
-  right: 0px;
   float:right;
+  margin:5px; 
 }
+.demo-layout-transparent {
+  background: url('https://images.unsplash.com/photo-1553969420-fb915228af51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+ 
 </style>
-<body>
-<!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Homepage</span>
-    <nav class="mdl-navigation">
-      <hr style="color:white;">
-      <a class="mdl-navigation__link" href="/Links-Webpage">Links-Webpage</a>
-      <a class="mdl-navigation__link"  href="/Vanity-Page">About Me</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="page-content">
-    <div class="body-text">
-    <h1 class="header">Aidan's Website of Fun!</h1>
-    <br> 
-        This is a page where I intend to have a homepage of sorts for a web portfolio! Included will be links to all of the stuff that I post to my BitBucket repository (I did have a GitHub but my school blocks it [Thanks FLDOE!]. They do not bock BitBucket however, so here I am). Eventually this page will scroll for ages and there will be stuff on the side to jump to. The next goal is to get it to smooth-scroll to them, but that probably needs some JavaScript, which I don't know whatsoever. It'll be repurposed StackExchange code probably. :P
-    <br>
-    <!-- Square card -->
-<style>
-.demo-card-square.mdl-card {
-  width: 320px;
-  height: 320px;
-}
-.demo-card-square > .mdl-card__title {
-  color: #fff;
-  background:
-    url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
-}
-</style>
-
-<div class="demo-card-square mdl-card mdl-shadow--2dp" id="about-card">
-  <div class="mdl-card__title mdl-card--expand">
-    <h2 class="mdl-card__title-text">About Me!</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    I'm a Junior in high school in Florida! This is a website where I'll put up my escapades in web development and other shenanigans. My BitBucket will house web development and my GitHub will house other development projects 
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <!-- Button Chip -->
-<a href="www.github.com/abeeinspace" button type="button" class="mdl-chip">
-    <span class="mdl-chip__text">My GitHub</span>
-</a> </button>
-  </div>
-</div>
-
-
-</div></div>
-  </main>
-</div>
-
-
-</body>
-</html>
+ <body>
+ <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
+ <div class=" mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+   <div class="mdl-layout__drawer mdl-layout__header--scroll mdl-layout__header--transparent demo-layout-transparent">
+     <span class="mdl-layout-title" style="color:white;">Homepage</span>
+     <nav class="mdl-navigation">
+       <hr style="color:white;">
+       <a class="mdl-navigation__link" href="/Links-Webpage" style="color:white">Links-Webpage</a>
+       <a class="mdl-navigation__link"  href="/Vanity-Page" style="color:white">About Me</a>
+     </nav>
+   </div>
+   <main class="mdl-layout__content">
+     <div class="page-content">
+     <div class="body-text">
+     <h1 class="header">Aidan's Website of Fun!</h1>
+     <br> 
+         This is a page where I intend to have a homepage of sorts for a web portfolio! Included will be links to all of the stuff that I post to my BitBucket repository (I did have a GitHub but my school blocks it [Thanks FLDOE!]. They do not bock BitBucket however, so here I am). Eventually this page will scroll for ages and there will be stuff on the side to jump to. The next goal is to get it to smooth-scroll to them, but that probably needs some JavaScript, which I don't know whatsoever. It'll be repurposed StackExchange code probably. :P
+     <br> <br>
+		 So this is cool! I got the header working now! Problem is when I commit it'll actually not work anymore cuz I can't figure out how to upload an image using BitBucket. Stop laughing
+     <!-- Square card -->
+ <style>
+ .demo-card-square.mdl-card {
+   width: 320px;
+   height: 320px;
+ }
+ .demo-card-square > .mdl-card__title {
+   color: #fff;
+   background:
+     url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+ }
+ </style>
+ 
+ <div class="demo-card-square mdl-card mdl-shadow--2dp" id="about-card">
+   <div class="mdl-card__title mdl-card--expand">
+     <h2 class="mdl-card__title-text">About Me!</h2>
+   </div>
+   <div class="mdl-card__supporting-text">
+     I'm a Junior in high school in Florida! This is a website where I'll put up my escapades in web development and other shenanigans. My BitBucket will house web development and my GitHub will house other development projects 
+   </div>
+   <div class="mdl-card__actions mdl-card--border">
+     <!-- Button Chip -->
+ <a href="www.github.com/abeeinspace" button type="button" class="mdl-chip">
+     <span class="mdl-chip__text">My GitHub</span>
+ </a> </button>
+   </div>
+ </div>
+ 
+ </div></div>
+   </main>
+ </div>
+ 
+ 
+ </body>
+ </html>
