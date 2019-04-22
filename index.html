@@ -26,16 +26,16 @@
   margin:5px; 
 }
 .demo-layout-transparent {
-  background: url('https://images.unsplash.com/photo-1540880389865-67175cd7aa04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80') center / cover;
+  background: url('https://images.unsplash.com/photo-1553080478-b70267c283c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80') center / cover;
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-  color: black;
+  color: white;
 }
 .mdl-navigation__link{
-		 background-color: white
+		 background-color: black
 			 opacity: 1;
 	 }
 #ScrollToTop {
@@ -45,6 +45,7 @@
   right: 30px;
   z-index: 99;
 }
+
 </style>
  <body>
  <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
@@ -93,9 +94,9 @@
    <div class="mdl-card__actions mdl-card--border">
      <!-- Button Chip -->
  <a href="https://bitbucket.org/ABeeinSpace" button type="button" class="mdl-chip">
-	 <span class="mdl-chip__text">My BitBucket</span></a></button>
+	 <span class="mdl-chip__text">My BitBucket</span></a>
  <a href="https://www.github.com/abeeinspace" button type="button" class="mdl-chip">
-     <span class="mdl-chip__text">My GitHub</span></a></button>
+     <span class="mdl-chip__text">My GitHub</span></a>
  
    </div>
  </div>
@@ -172,7 +173,7 @@
 </div>
 </div>
 </div>		
-
+<h2></h2>
 <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" id="ScrollToTop" onlclick="TopFunction()">
   <i class="material-icons">arrow_upwards</i>
 </button>
