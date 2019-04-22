@@ -15,30 +15,29 @@
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: white;
-  
+  }
+  .mdl-layout__drawer-button {
+padding: 12px 0;
 }
 body {
     margin: 0;
     height: 500vh; /* so we can scroll */
-    width: 75%;
 }
 
 .cover-image {
     width: 100%;
     height: 250vh; /* gives the effect a bit of room to breathe */
     position: relative;
-    background: url('https://images.unsplash.com/photo-1554291499-563a504e0734?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') fixed 50%/cover; /* This is the bottom image, blurred and grayscaled. Could also use filters to do this + another pseudoel, but is less performant. */
+    background: url(https://unsplash.it/g/1000/600/?image=433&blur) fixed 50%/cover; /* This is the bottom image, blurred and grayscaled. Could also use filters to do this + another pseudoel, but is less performant. */
 }
-.mdl-layout__drawer-button {
-padding: 12px 0;
-}
+
 .cover-image:after {
     content: '';
     position: absolute;
     width: inherit;
     height: inherit;
     background: inherit;
-    background-image: url(https://images.unsplash.com/photo-1554291499-563a504e0734?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+    background-image: url(https://unsplash.it/1000/600/?image=433);
     mask: linear-gradient(to bottom, white 40%, transparent); /* Top image is masked with a gradient */
 }
 </style>
