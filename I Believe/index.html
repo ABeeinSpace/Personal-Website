@@ -1,86 +1,98 @@
 <html>
 <head>
 <title>I Believe...</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<!-- Uses a transparent header that draws on top of the layout's background -->
-<style>
-.demo-layout-transparent {
-  background: url('https://images.unsplash.com/photo-1554291499-563a504e0734?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') center / cover;
+<style>.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
 }
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  }
-  .mdl-layout__drawer-button {
-padding: 12px 0;
-}
-body {
-    margin: 0;
-    height: 500vh; /* so we can scroll */
+  text-shadow: 0 0 5px #000;
 }
 
-.cover-image {
-    width: 100%;
-    height: 250vh; /* gives the effect a bit of room to breathe */
-    position: relative;
-    background: url(https://unsplash.it/g/1000/600/?image=433&blur) fixed 50%/cover; /* This is the bottom image, blurred and grayscaled. Could also use filters to do this + another pseudoel, but is less performant. */
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
 }
 
-.cover-image:after {
-    content: '';
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    background: inherit;
-    background-image: url(https://unsplash.it/1000/600/?image=433);
-    mask: linear-gradient(to bottom, white 40%, transparent); /* Top image is masked with a gradient */
+/* The styling for the static div. */
+.static {
+  background: red;
+}
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.bg1::after {
+  background-image: url('https://placekitten.com/g/900/700');
+}
+
+.bg2::after {
+  background-image: url('https://placekitten.com/g/800/600');
 }
 </style>
-
-<div class="demo-layout-transparent mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--transparent">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">I Believe...</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation -->
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">People</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">I Believe...</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">In the good of people..</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">That everyone who is lost... can be found</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">That the only thing you can do...</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">I Believe..</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">In the good of people..</a>
-      <a class="mdl-navigation__link" href="">That everyone who is lost... can be found</a>
-      <a class="mdl-navigation__link" href="">That you must be lost in order to be found..</a>
-      <a class="mdl-navigation__link" href="">That the only thing you can do...</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-  
-<!-- SCROLL TO SEE THE EFFECT -->
-<div class="cover-image"></div>
-  <div class="content-card" id="card-1">
-  
-  </div>
-  </main>
-</div>
+I believe...
+<p>That people are good.</p> <p>And that anyone who isn't is simply... misunderstood.</p>
+I believe that there are still horrible people in this world. But the vast majority are just trying to get by
 
 
-
-
-
-
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
