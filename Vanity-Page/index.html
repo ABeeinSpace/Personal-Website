@@ -1,199 +1,108 @@
 <!DOCTYPE html>
- <html>
- <head>
- <title>Aidan's iPortfolio</title>
- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-orange.min.css">
+<style type="text/css">
+.dronevid {
+	width: 501pt;
+	right: 1136px;
+}
+</style>
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- </head>
- <style>
- .page-content {
-     margin:20px;
-	 background-color: white
- }
-
- .header {
-   color:rgb(255, 193, 7);
- }
- 
- html {
-   scroll-behavior:smooth;
- }
- 
- #about-card {
-  position: relative;
-  float:right;
-  margin:5px; 
-}
-.demo-layout-transparent {
-  background: url('https://images.unsplash.com/photo-1550634376-12757d0e72fa?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80 500w,') center / cover;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: white;
-}
-	 .mdl-navigation__link{
-		 background-color: white
-			 opacity: 1;
-	 }
-</style>
- <body>
- <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
- <div class=" mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-   <div class="mdl-layout__drawer mdl-layout__header--scroll mdl-layout__header--transparent demo-layout-transparent">
-     <span class="mdl-layout-title" style="color:white;">A Website</span>
-     <nav class="mdl-navigation">
-       <div class="nav-items mdl-shadow--6dp">
-		<a class="mdl-navigation__link "  href="#intro" style="color:black;background-color:white;opacity: 1;">Introduction</a>
-       <a class="mdl-navigation__link"  href="#dev" style="color:black;background-color:white;opacity: 1;">Development Work</a>
-       <a class="mdl-navigation__link"  href="#not-dev" style="color:black;background-color:white;opacity: 1;">Other Computer Crap</a>
-	   </div><div class="nav-items mdl-shadow--16dp">
-	   <hr style="color:white;">
-       <a class="mdl-navigation__link" href="/Links-Webpage" style="color:black;background-color:white;opacity: 1;">Links-Webpage</a>
-       <a class="mdl-navigation__link"  href="/Vanity-Page" style="color:black;background-color:white;opacity:1;">About Me</a>
-	  </div> 
-	</nav>
-   </div>
-   <main class="mdl-layout__content">
-     <div class="page-content">
-     <div class="body-text">
-     <h2 id="intro">Introduction</h2>
-         This is a page where I intend to have a homepage of sorts for a web portfolio! Included will be links to all of the stuff that I post to my BitBucket repository (I did have a GitHub but my school blocks it [Thanks FLDOE!]. They do not block BitBucket however, so here I am). Eventually this page will scroll for ages and there will be stuff on the side to jump to. The next goal is to get it to smooth-scroll to them, but that probably needs some JavaScript, which I don't know whatsoever. It'll be repurposed StackExchange code probably. :P
-		<p><strike>So this is cool! I got the header working now! Problem is when I commit it'll actually not work anymore cuz I can't figure out how to upload an image using BitBucket. Stop laughing.</strike> I got it working fully! Now I need accessibility tweaks so the text is legible.</p> 
-        <!-- Square card -->
- <style>
- .demo-card-square.mdl-card {
-   width: 320px;
-   height: 320px;
- }
- .demo-card-square > .mdl-card__title {
-   color: #fff;
-   background:
-     url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
- }
- </style>
- 
- <div class="demo-card-square mdl-card mdl-shadow--2dp" id="about-card">
-   <div class="mdl-card__title mdl-card--expand">
-     <h2 class="mdl-card__title-text">About Me!</h2>
-   </div>
-   <div class="mdl-card__supporting-text">
-     I'm a Junior in high school in Florida! This is a website where I'll put up my escapades in web development and other shenanigans. My BitBucket will house web development and my GitHub will house other development projects (they'll move to BitBucket as I need them for school. Actually my most current work will be on BitBucket, so it's linked here first)
-   </div>
-   <div class="mdl-card__actions mdl-card--border">
-     <!-- Button Chip -->
- <a href="https://bitbucket.org/ABeeinSpace" button type="button" class="mdl-chip">
-     <span class="mdl-chip__text">My BitBucket</span>
- <a href="https://www.github.com/abeeinspace" button type="button" class="mdl-chip">
-     <span class="mdl-chip__text">My GitHub</span>
- </a> </button>
-   </div>
- </div>
-        <h2 id="dev">My Escapades in Dev Work</h2>
-           <p>I went to a summer camp at Stetson, where I learned some Python. Unfortunately, I've forgotten most of it simply because I haven't used it. Same with C#, and I've forgotten that one nearly entirely. HTML and CSS however, I think I'm pretty good at.</p>
-        <h2 id="not-dev">Computer Work Besides Development</h2>
-           <p>I hold Microsoft Office Specialist 2013 certifications in Word, Excel, PowerPoint, OneNote, and Outlook, and I hold MOS Master based on a Word Expert certification. (Note that it's only for 2013).</p>
-           <p>I have a Dell Inspiron 2-in-1, and it's currently running macOS Mojave. Some things are working, and some are not, but most things are working including the Mac App Store. Also Office is on there, which is good.</p>
-		<h2 id="photography">Photography</h2>
-		 	<p>One thing I have an interest in is photography. I have a lake behind my house so it's really esy for me to get some AMAZING photography. Some of it is below:</p>
-		<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--4-col"><!-- Image card -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Vanity Page</title>
+</head>
+<body>
+<!-- Simple header with fixed tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Vanity Page</span>
+    </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">About Me</a>
+      <a href="#fixed-tab-2" class="mdl-layout__tab">Linkz</a>
+      <a href="#fixed-tab-3" class="mdl-layout__tab">A Word on Drones</a>
+	  <a href="#fixed-tab-4" class="mdl-layout__tab">Interests</a>
+	  <a href="#fixed-tab-5" class="mdl-layout__tab">My School</a>
+	  <a href="#fixed-tab-6" class="mdl-layout__tab">Micellaneous Other Things</a>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+      <div class="page-content"><!-- Square card -->
 <style>
-.demo-card-image.mdl-card, #img-card-1 {
-  width: 256px;
-  height: 256px;
-  background: url('https://lh3.googleusercontent.com/yBye2A6dilDn9cSGY3XBpzeLPjgd3rwXzoNsPF5uJNYblhc2VHepl97TYbiL99k5lKz4OjI4HgPIX-hBC9pnA2xfX9iGNWjLWqWZxJMwYyPv7gGyRLp7YrKKt6zNLRWRUGuDIaY9Qw=w1083-h813-no') center / cover;
+.demo-card-square.mdl-card {
+  width: 400px;
+  height: 400px;
 }
-.demo-card-image > .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
-}
-.demo-card-image__filename {
+.demo-card-square > .mdl-card__title {
   color: #fff;
-  font-size: 14px;
-  font-weight: 500;
+  background:
+    url('https://drive.google.com/file/d/1cgHibSG_v9NbM0cT-a8-xtpuKshcKxvr/view') bottom right 15% no-repeat #46B6AC;
 }
+	.page-content{
+		margin: 20px
+	}
+
 </style>
 
-<div class="demo-card-image mdl-card mdl-shadow--2dp" id="img-card-1">
-  <div class="mdl-card__title mdl-card--expand" ></div>
-  <div class="mdl-card__actions">
-    <span class="demo-card-image__filename">Lake Photo</span>
+<div class="demo-card-square mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text">About Me!</h2>
   </div>
+  <div class="mdl-card__supporting-text">
+    I'm a junior at Sebring High School who is interested in all things band and computers. The easiest way to get my new computing projects is to take a peek at my GitHub, where I'm trying to upload all of my significant coding projects (This site will probably be going up there when I'm done or when I feel comfortable releasing this onto the wider 'Net)
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://www.github.com/ABeeinSpace" target="_blank">
+      My GitHub
+    </a>
 </div>
 </div>
-  <div class="mdl-cell mdl-cell--4-col"><!-- Image card -->
+    </section>
 <style>
-.demo-card-image.mdl-card, #img-card-2 {
-  width: 256px;
-  height: 256px;
-  background: url('https://lh3.googleusercontent.com/AT_IZCIxghckwvMvMxll28l4gcvE4uIODELYDTj33vFj6WoCbEmzlujyfO0_2r_AQKMqeXrNEGmwuPNivTbnP7ZD1GVW80VaeUJo_-srvSXtmaEi-VDMyCdiGuveJV6xabVSLeI7FwcQhgA02cSmK9ANeL1Q50FGaEAO9Y0TCqdUsISBMnmhV-2t9kBPXJa9kp1MrPia055WoNOqNJHtVvsg6DHjcpZt-2oMkIE14Hl4KOPJuAw80YawzRbzfQkmIs8MgCPHB0dI4nfR-wZmNnGhwpYM4mWL_hoE5yjTkH3HYpEAmYVfO7vtg0wabUtBdvZ7fza7F38HgMA-qOgYeOYJb_097_NwPa_qiwSlpNfApvToWT-e06FrUInpcuHfO79MC7bSQEZGk1iM4LDbmdPOa2wEWTr7GfTw0o8PZI6U0-xjGsDt-h7cDnIR6YVeG6s1rC4bpwIxrjcpqYsUC4BjCZRRR_ODdPnkhGNO5EANc5PPUV0CSfvQTuNQkBZkXc1VnC1vN_rYSMDmsnrY0cEoXXdFuoauhwDpda2KP9qHSsGX4FEpqKvD_RhNuKtO_YqG8-R2RhE0-cnfZ7CXCVIu7h50JC-4j9jrljhURmKfjgKRKt0C8e8tsKjVxjijuw1v82J4t5sM100U5McuguUOIdm3P08=w1219-h913-no') center / cover;
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
 }
-.demo-card-image > .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
-}
-.demo-card-image__filename {
+.demo-card-square > .mdl-card__title {
   color: #fff;
-  font-size: 14px;
-  font-weight: 500;
+  background:
+     bottom right 15% no-repeat image(F:\Users\415750\Downloads\images\Code stock image.png);
 }
 </style>
 
-<div class="demo-card-image mdl-card mdl-shadow--2dp" id="img-card-2">
-  <div class="mdl-card__title mdl-card--expand"></div>
-  <div class="mdl-card__actions">
-    <span class="demo-card-image__filename">Lake Drone Photo</span>
-  </div>
-</div></div>
-  <div class="mdl-cell mdl-cell--4-col"><!-- Image card -->
-<style>
-.demo-card-image.mdl-card, #img-card-3 {
-  width: 256px;
-  height: 256px;
-  background: url('https://lh3.googleusercontent.com/IfMFCVyTR9JNF3q8DKZYjjf7ypiiFUBIHvnwm9CJhNLVsfW1BYrr9wKrPxLkDfJoAsw5LARsHMN60y_zTnBeOUBS672cJJ5XARseIwCuRRjCch7TniHGuB1pNe_-0r5kG9P9MxJxaXYbAdGVBQEPBaxazyf5CJtOoRVrfSoB6bJ77PAFFm-5gNA5tq_VEzTel7JGUZQo4H-KfG60yBBqu6F7CLxlqFm1WiC-ahAK_BA6yfyqovpBnY9-YR4aC60jKkO9pGCE83jgiaTHiDiWKUaJVy7ewAcWg8ng55cqM3V32x5ipsgL5PoRMfqAEpdZfviXT5LTkapu5mY8fpUemnyu1E4DvNEPQcatcBAqJgF-3eCz7Wg65O0q4yKzS8_ksW5eyD_tBJwv7DHmap34nx_dF8IiAi18yjXFhF-htJkADv0M-Z46gYVHjgz9cAZkdBqDKKcEXtpPYww-GSplbMS55ZvCXWvTTd-sEzx4nGI3hyal4HxfL5ufX7KWqizrmUxBn3fJW5BL2KptcU7arZZquD9jDFVxfed6kRKsHP7ihkDOE-GF64dva1QDvgbtCGOLNcd-ECQ7TdVfwbma2Y2dtVRGR5lFLuA5guN7vui8B4w34l0a66gWzO8v88uKXnQ3cydJ911tEf8K8muHNe0JR-rHZxc=w1218-h913-no') center / cover;
-}
-.demo-card-image > .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
-}
-.demo-card-image__filename {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-}
-</style>
-
-<div class="demo-card-image mdl-card mdl-shadow--2dp" id="img-card-3">
-  <div class="mdl-card__title mdl-card--expand"></div>
-  <div class="mdl-card__actions">
-    <span class="demo-card-image__filename">Downtown</span>
-  </div>
+<section class="mdl-layout__tab-panel" id="fixed-tab-2">
+      <div class="page-content"><h2>Links I use</h2>
+        <ul>
+          <li><a href="https://classroom.google.com">Google Classroom</a></li>  
+            <li><a href="https://google.com">The Google search engine itself.</a> Due to the prevalence of Chromebooks, I use Google exclusively for my research. No other company can have the integration that Google has because of Google's massively long product list. It's almost terrifying how much Google controls our everyday.</li>
+            <li><a href="https://news.google.com"> Google News</a> Google has a news service that I use pretty exclusively due to my preference for Google's Material Theme design langauge (This very website is using Google's predecessor language because MT is hard to set up). The problem with this is that Google is known to lean different ways, so it is a very valid concern that Google would show biased news. The company has a "View full coverage" button that shows a variety of news sources</li>
+        </ul>
+      </div>
+		</section>
+    <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+      <div class="page-content"><h2>Drones are a wonderful tool.</h2>
+		They realy are. The problems arise when people decide that "New Technology is Evil and That is Final". Unfortunately, people have decided that drones as a technology are linked to spying and covert invasions of privacy, and that the technikigy is evil and only used by peeping toms and the NSA. This is simply not true. Drones have a variety of uses. They allow farmers to have a bird's eye view of their crop. They allow for a whole new sport--drone racing!
+        <iframe width="400" height="444" src="https://www.youtube.com/embed/P3FZ0UI8jTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="dronevid"></iframe>
+      </div>
+    </section>
+	<section class="mdl-layout__tab-panel" id="fixed-tab-4">
+      <div class="page-content"><h2>What I do with My Life?</h2>
+		<ul>
+			<li>I drone mostly. I decline to tell if its droning on or if its flying a drone ; )</li>
+			<li>I tweak software/upgrade hardware on my computers-- I own two computers, a desktop (that's a dinosaur. I might end up dropping an entirely new motherboard into the case), and my laptop. My laptop has already been upgraded (I switched from a spinner drive to a Samsung 840 EVO), and Im thinking about a RAM upgrade. </li>
+			<li>I have a little bit mroe than a passing interest in photography--I have quite a few pictures of my lake-- but I don't consider it a hobby for me.</li>
+		</ul>
+      </div>
+    </section>	
+		
+  </main>
 </div>
-</div>
-</div>		
-
-
-
- <footer class="mdl-mini-footer">
-  <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo">Aidan's iPortfolio</div>
-    <ul class="mdl-mini-footer__link-list">
-      <li>The photo behind the navigation pane is NOT my work. It's by Sam Wermut on <a href="https://unsplash.com">Unsplash</a></li>
-    </ul>
-  </div>
-</footer>
-
- </div></div>
-   </main>
- </div>
- 
- 
- </body>
- </html>
+</body>
+</html>
