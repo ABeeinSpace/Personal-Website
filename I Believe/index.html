@@ -3,7 +3,8 @@
 <title>I Believe...</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<style>.wrapper {
+<style>
+.wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
    * 100vh is the full height of the viewport. */
   height: 100vh;
@@ -27,6 +28,11 @@
   justify-content: center;
   color: white;
   text-shadow: 0 0 5px #000;
+}
+
+#page-content {
+	margin:20px;
+	margin-left: 20px;
 }
 
 .parallax::after {
@@ -85,10 +91,33 @@
             </li>
           </ul>
         </div>
-      </nav>
-I believe...
-<p>That people are good.</p> <p>And that anyone who isn't is simply... misunderstood.</p>
-I believe that there are still horrible people in this world. But the vast majority are just trying to get by
+	  </nav>
+	  <main class="wrapper">
+		<section class="section parallax bg1">
+		  <h1>I Believe...</h1>
+		</section>
+		<section class="section static">
+			<h1><p>That people are good.</p> <p>And that anyone who isn't is simply... misunderstood.</p>
+			  <p>I believe that there are still horrible people in this world. But the vast majority are just trying to get by.</p></h1>
+		  </section>
+		<section class="section parallax bg2">
+		  <h1>I believe...</h1>
+		</section>
+		<section class="section static">
+			<h1><p>I believe in charging forward and making the most out of a day</p>
+				<p>I believe that there's nothing more amazing than spending time with someone you love</p>
+				<p>I believe that everyone has the right to have a fair shot at being successful, at the best them they can possibly be. That every injustice in this world can be solved if only someone would care.</p></h1>
+		  </section>
+		  <section class="section static">
+			<h1><p>Maybe im too naive. Maybe I'm too innocent, a sweet, summer child who doesn't know the realities of the world. That's probably true. I prefer the term optimistic, positive, and caring. Somebody who doesn't just care about the bottom line, or about themselves, or any of that. I care about helping people. I care about asking someone if they're okay.</p></h1>
+		  </section>
+
+
+	  </main>
+<div id="page-content"></div>
+
+
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
