@@ -27,8 +27,9 @@
     <br>
     <p><button class="foo-button mdc-button">Button</button></p>
 </div>
-<script>import {MDCTopAppBar} from '@material/top-app-bar/index';
-
+<script>
+import {MDCFoo, MDCFooFoundation} from '@material/foo';
+import {MDCTopAppBar} from '@material/top-app-bar/index';
 // Instantiation
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const topAppBar = new MDCTopAppBar(topAppBarElement);
