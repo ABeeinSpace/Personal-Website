@@ -1,38 +1,81 @@
 <html>
-<head>
-<title>Landing Page</title>
-  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<style>
-.body-text {
-    margin:20px;
-}
-@import "@material/top-app-bar/mdc-top-app-bar"
-</style>
-<body>
-<header class="mdc-top-app-bar">
-  <div class="mdc-top-app-bar__row">
-    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-      <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
-      <span class="mdc-top-app-bar__title">Landing Page</span>
-    </section>
-  </div>
-</header>
-  <h1>A Website</h1>
-    <br> 
-        This is a page where I intend people to land when/if they find my site! Included will be links to all of the stuff that I post to my BitBucket repository (I did have a GitHub but my school blocks it [Thanks FLDOE!]. They do not bock BitBucket however, so here I am). 
-    <br>
-    <p><button class="foo-button mdc-button">Button</button></p>
-</div>
-<script>
-import {MDCFoo, MDCFooFoundation} from '@material/foo';
-import {MDCTopAppBar} from '@material/top-app-bar/index';
-// Instantiation
-const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-const topAppBar = new MDCTopAppBar(topAppBarElement);
-mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Elements</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="material-components-web.min.css" />
+    <style>
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .element-card {
+        width: 20em;
+        margin: 16px;
+      }
+
+      .element-card > .mdc-card__media {
+        height: 9em;
+      }
+
+      #demo-absolute-fab {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body class="mdc-typography">
+    <h1>Choose your element</h1>
+    <div class="cards">
+      <div class="mdc-card element-card earth">
+        <div class="mdc-card__media">
+          <div class="mdc-card__media-content">
+            <h1 class="mdc-typography--headline4">Earth</h1>
+            <h2 class="mdc-typography--headline6">A solid decision.</h2>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div class="mdc-card element-card wind">
+        <div class="mdc-card__media">
+          <h1 class="mdc-typography--headline4">Wind</h1>
+          <h2 class="mdc-typography--headline6">Stormy weather ahead.</h2>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div class="mdc-card element-card fire">
+        <div class="mdc-card__media">
+          <h1 class="mdc-typography--headline4">Fire</h1>
+          <h2 class="mdc-typography--headline6">Hot-headed much?</h2>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div class="mdc-card element-card water">
+        <div class="mdc-card__media">
+          <h1 class="mdc-typography--headline4">Water</h1>
+          <h2 class="mdc-typography--headline6">Go with the flow.</h2>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+    <button class="mdc-fab" id="demo-absolute-fab" aria-label="Favorite">
+      <span class="mdc-fab__icon material-icons">favorite</span>
+    </button>
+  </body>
 </html>
