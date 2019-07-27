@@ -223,7 +223,7 @@ body .demo-blog {
 .demo-blog .on-the-road-again .mdl-card__media {
   background-image: url('images/road.jpg');
 }
-.demo-blog .shopping .mdl-card__media #towns {
+.demo-blog .shopping .mdl-card__media {
   background-image: url('images/shopping.jpg');
 }
 .demo-blog .demo-blog__posts > .demo-nav {
