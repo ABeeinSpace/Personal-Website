@@ -1,251 +1,276 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-amber.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-amber.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<style>
         body {
-            float:right;
-            font-family:"poiret-one""source-sans-pro";
-            position:absolute;
-            left:auto;
-        }
-        h2 {
-            color:rgb(255, 193, 7);
-        }
-        .page-content {
-            margin:15px
-        }
-        <!-- Uses a header that contracts as the page scrolls down. --> <style> .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
-            padding-right: 0;
+        float: right;
+        font-family: "poiret-one""source-sans-pro";
+        position: absolute;
+        left: auto;
+    }
+    
+    h2 {
+        color: rgb(255, 193, 7);
+    }
+    
+    .page-content {
+        margin: 15px
+    }
+    
+    <!-- Uses a header that contracts as the page scrolls down. --><style>.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
+        padding-right: 0;
         html {
             scroll-behavior: smooth;
         }
         .mdl-layout__drawer-button {
-          background: white;
-          opacity:0.95;
-          box-shadow: 1px 1px 1px gray;
+            background: white;
+            opacity: 0.95;
+            box-shadow: 1px 1px 1px gray;
         }
-    </style>
-    <link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+</style>
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+<!-- I don't think that this bootstrap line is still doing anything. However, this code is held together with duct tape and IT black magic copy-pasted code so he gets to stay-->
 
-    <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
-        <header class="mdl-layout__header mdl-layout__header--waterfall">
-            <!-- Top row, always visible -->
-            <div class="mdl-layout__header-row">
-                <!-- Title -->
-                 <span class="mdl-layout-title">Links Assignment</span>
-                <div class="mdl-layout-spacer"></div>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-js-ripple-effect">
-                    <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--waterfall">
+        <!-- Top row, always visible -->
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Links Assignment</span>
+            <div class="mdl-layout-spacer"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-js-ripple-effect">
+                <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
                          <i class="material-icons">search</i>
                     </label>
-                    <div class="mdl-textfield__expandable-holder">
-                        <input class="mdl-textfield__input" type="text" name="sample" id="waterfall-exp">
-                    </div>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample" id="waterfall-exp">
                 </div>
             </div>
-            <!-- Bottom row, not visible on scroll -->
-            <div class="mdl-layout__header-row">
-                <div class="mdl-layout-spacer"></div>
-                <!-- Navigation -->
-                <nav class="mdl-navigation">
-                     <a class="mdl-navigation__link" href="#OS">OSes</a>
-                     <a class="mdl-navigation__link" href="#de">DEs</a>
-                     <a class="mdl-navigation__link" href="#bad">Bad Windows Versions</a>
-                     <a class="mdl-navigation__link" href="#fun">Fun Stuff</a>
-                     <a class="mdl-navigation__link" href="#google">Google Easter Eggs</a>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer">
-             <span class="mdl-layout-title">Links Assignment</span>
+        </div>
+        <!-- Bottom row, not visible on scroll -->
+        <div class="mdl-layout__header-row">
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
             <nav class="mdl-navigation">
-                 <a class="mdl-navigation__link" href="#OS">OSes</a>
-                 <a class="mdl-navigation__link" href="#de">DEs</a>
-                 <a class="mdl-navigation__link" href="#bad">Bad Windows Versions</a>
-                 <a class="mdl-navigation__link" href="#fun">Fun Stuff</a>
-                 <a class="mdl-navigation__link" href="#google">Google Easter Eggs</a>
-				<hr>
-				<a class="mdl-navigation__link" href="https://abeeinspace.bitbucket.io"> Back to Landing Page!</a>
-				<a class="mdl-navigation__link" href="https://abeeinspace.bitbucket.io/Vanity-Page"> Vanity Page</a>
+                <a class="mdl-navigation__link" href="#OS">OSes</a>
+                <a class="mdl-navigation__link" href="#de">DEs</a>
+                <a class="mdl-navigation__link" href="#bad">Bad Windows Versions</a>
+                <a class="mdl-navigation__link" href="#fun">Fun Stuff</a>
+                <a class="mdl-navigation__link" href="#google">Google Easter Eggs</a>
             </nav>
         </div>
-        <main class="mdl-layout__content">
-            <div class="page-content">
-                <!-- Bottom row, not visible on scroll -->
-                <div class="mdl-layout__header-row">
-                </div>
-                </header>
-                <div class="mdl-layout__drawer">
-                     <span class="mdl-layout-title">Links Assignment</span>
-                    <nav class="mdl-navigation">
-                         <a class="mdl-navigation__link" href="">Link</a>
-                         <a class="mdl-navigation__link" href="">Link</a>
-                         <a class="mdl-navigation__link" href="">Link</a>
-                         <a class="mdl-navigation__link" href="">Link</a>
-                    </nav>
-                </div>
-                <main class="mdl-layout__content">
-                    <div class="page-content">
-
-                        <body>
-                            <div id="body-text">
-                                 <h2 id="OS">My Favorite Operating Systems</h2>
-                                <ul>
-                                    <li>Solus Linux is an up and coming distro built from scratch using a brand spanking new Desktop Environment--Budgie!
-                                        <a href="https://getsol.us">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>Ubuntu-- the best linux distro for beginners! It's also really good for servers (althought Ubuntu Server doesn't come with a desktop environment)
-                                        <a href="https://www.ubuntu.com">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>Fedora! A linux distro runing pure GNOME. No additions or tweaks like Canonical with Ubuntu.
-                                        <br>Fedora is targeted at developers
-                                        <a href="https://getfedora.org">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>Manjaro Linux! The stability of the legendary Arch Linux, but without the horrendously difficult installation
-                                        <br>procedure that Arch is known for
-                                        <a href="https://manjaro.org">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>Antergos Linux! Arch, but without the horrible install procedure, and GNOME. 'Nuff said.
-                                        <a href="https://antergos.com">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                 <h2 id="de">My Favorite Desktop Environments</h2>	
-                                <ul>
-                                    <li>Budgie! Budgie is a DE that looks similar to Windows, but is better in a number of ways.
-                                        <br>It can be found running on a number of distros, including Ubuntu Budgie, Solus (the flagship distro using Budgie), and Manjaro Linux.
-                                        <a href="https://github.com/solus-project/budgie-desktop">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>GNOME! Some regard it as a somewhat "heavier" environment (meaning it uses up more resources compared to other DEs. Compared to Windows, its still a lightweight. GNOME's flagship distro is Fedora, but it can be found
-                                        running on literally almost anything. It takes some getting used to but once one gets used to the different window management, GNOME is rock-solid.
-                                        <a href="https://www.gnome.org">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>KDE! A DE for more advanced users, as it exposes almost every switch you could possibly want to toggle in the GUI without having to do terminal wizardry. KDE's flagship distro is KDE Neon, and it's developed by the
-                                        same team who makes the DE itself
-                                        <a href="https://kde.org">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>Cinnamon! A desktop environment that has it's claim to fame in Linux Mint-- An Ubuntu-based Linux distribution that's great for beginners!
-                                        <a href="https://linuxmint.com/">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>Unity! Unity was used by Canonical for Ubuntu in version prior to 18.04. in Ubuntu 18.04 Unity was abandoned in favor of GNOME (but with heavy customizations)
-                                        <a href="https://www.ubuntu.com/">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                 <h2 class="Headers" id="bad">The Worst Versions of Windows</h2>
-
-                                <ul>
-                                    <li>Windows Versions prior to 3.1-- These versions of Windows had very little in the way of multitasking. Wanted to overlap windows? You can't. Windows can only be tiled. After Windows 3.1, overlapped windows were enabled
-                                        as a feature.
-                                        <a href="https://winworldpc.com/product/windows-3/31">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>Windows ME-- Windows Millenium Edition is Windows 98, with all of the bad parts and a pastel color scheme. It was <em>b a d</em>
-                                        <a href="https://winworldpc.com/product/windows-me/final">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>Windows Vista-- Windows 7's disgraced cousin. 7 is everything Vista tried to be. but alas, Vista was a touch too ambitious. The system requirements were high, and crashes were rampant!</li>
-                                    <li>Windows 8-- Windows 8 was also a disgraced cousin. Windows 10 is everything Windows 8 was supposed to be: A melding between a tablet-style UI and a desktop UI that actually works
-                                        <a href="https://en.wikipedia.org/wiki/Windows_8">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>Windows 2000-- Windows 2000 actually was not that bad. It was the business version of Windows ME, but it was built on a different kernel (the New Technology kernel, or NT kernel). Prior versions of Windows had essentially
-                                        been a layer over top of MS-DOS (MicroSoft-Disk Operating System), but Windows 2000 was the first time Windows could become independent of DOS. Tech pioneered with Windows 2000 first appeared in consumer releases
-                                        of Windows in Windows XP
-                                        <a href="https://en.wikipedia.org/wiki/Windows_8">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                 <h2 class="Headers" id="fun">Fun Stuff</h2>
-
-                                <ul>
-                                    <li>Star Wars, but text! If you go to any terminal emulator (excepting Windows Command Prompt and PowerShell. PuTTY can be used to get this easter egg on Windows) <a href="https://lifehacker.com/watch-star-wars-in-text-via-telnet-373571">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a></li>
-                                    <li>A picture of Apple Park in the Finder about window: Press and hold Option, then use the mouse and click "About the Finder". A picture of Apple Park will pop up instead of the usual About window.</li>
-                                    <li>A Poem in TextEdit! If you look at the current icon for Text Edit in the macOS, it will have a poem in it! It reads as follows: <italics>Dear Kate, Here’s to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes — the ones who see things differently. They’re not fond of rules and they have no respect for the status quo. You can praise them, disagree with them, quote them, disbelieve them, glorify, or vilify them. About the only thing that you can’t do is ignore them. Because they change things. Take care,John Appleseed <a href="http://www.eeggs.com/items/52406.html">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a></li>
-                                    <li>Cool slow-motion effects when interacting with a window! If you press and hold Shift, then interact with the Maximize or Minimize button, the action will be in slow motion!<a href="http://www.eeggs.com/items/29318.html">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a></li>
-                                    <li>When there is an in progress app download on macOS, the "date modified" field will read January 24, 1984. This date was the debut of the Macintosh!<a href="https://mashable.com/2014/01/23/mac-easter-eggs/#xOldLm4nlgqI">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-                                            </button>
-                                        </a></li>
-                                </ul>
-
-                                 <h2 class="Headers" id="google">Google Easter Eggs</h2>
-
-                                <ul>
-                                    <li>When you type in "askew", the Google window will actually rotate to the side slightly. <a href="https://www.google.com/search?source=hp&ei=bKSVXM34IMap5wKBiqT4CA&q=askew&btnK=Google+Search&oq=askew&gs_l=psy-ab.3...1792.2628..3101...0.0..0.0.0.......0....1..gws-wiz.....0."><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-										</button></a></li>
-                                    <li>Typing in Atari Breakout in a Google image search, and play away!<a href="https://www.google.com/search?q=atari+breakout&hl=en&authuser=0&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwj9h4-fp5fhAhUK36QKHQsLBfQQ_AUIDigB&biw=1366&bih=635"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
-										</button></a></li>
-                                    <li>If you search for "the answer to life, the universe and everything", the Google calculator pops up with 42 in the screen.Its a reference to "Hitchhiker's Guide to the Galaxy"<a href="https://www.google.com/search?q=the+answer+to+life+the+universe+and+everything&oq=the+an&aqs=chrome.0.69i59j69i61l3j69i57j0.1566j0j7&sourceid=chrome&ie=UTF-8"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i></button></a></li>
-                                    <li>Bletchly Park-- if you search for Bletchly Park on Google, the Knowledge Panel will have the name scrambled. It will then decode.<a href="https://www.google.com/search?q=bletchley+park&oq=blet&aqs=chrome.0.69i59j69i57j0l4.1595j0j9&sourceid=chrome&ie=UTF-8"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i></button></a></li>
-									<li>Sonic the hedgehog in Google search! If you search for Sonic the Hedgehog, there will be an interactable Classic Sonic in the Knowledge Panel!<a href="https://www.google.com/search?q=sonic+the+hedgehog&oq=sonic+&aqs=chrome.0.69i59j0j69i57j0l3.1760j0j7&sourceid=chrome&ie=UTF-8"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i></button></a></li>
-                                </ul>
-
-                        </body>
-                        </div>
-                </main>
-                </div>
-
-                <head>
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Teh Page of Many Linkz</title>
-                </head>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Links Assignment</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="#OS">OSes</a>
+            <a class="mdl-navigation__link" href="#de">DEs</a>
+            <a class="mdl-navigation__link" href="#bad">Bad Windows Versions</a>
+            <a class="mdl-navigation__link" href="#fun">Fun Stuff</a>
+            <a class="mdl-navigation__link" href="#google">Google Easter Eggs</a>
+            <hr>
+            <a class="mdl-navigation__link" href="https://abeeinspace.bitbucket.io"> Back to Landing Page!</a>
+            <a class="mdl-navigation__link" href="https://abeeinspace.bitbucket.io/Vanity-Page"> Vanity Page</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            <!-- Bottom row, not visible on scroll -->
+            <div class="mdl-layout__header-row">
             </div>
-        </main>
-    </div>
-    </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Links Assignment</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+
+                    <body>
+                        <div id="body-text">
+                            <h2 id="OS">My Favorite Operating Systems</h2>
+                            <ul>
+                                <li>Solus Linux is an up and coming distro built from scratch using a brand spanking new Desktop Environment--Budgie!
+                                    <a href="https://getsol.us">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>Ubuntu-- the best linux distro for beginners! It's also really good for servers (althought Ubuntu Server doesn't come with a desktop environment)
+                                    <a href="https://www.ubuntu.com">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>Fedora! A linux distro runing pure GNOME. No additions or tweaks like Canonical with Ubuntu.
+                                    <br>Fedora is targeted at developers
+                                    <a href="https://getfedora.org">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>Manjaro Linux! The stability of the legendary Arch Linux, but without the horrendously difficult installation
+                                    <br>procedure that Arch is known for
+                                    <a href="https://manjaro.org">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>Antergos Linux! Arch, but without the horrible install procedure, and GNOME. 'Nuff said.
+                                    <a href="https://antergos.com">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h2 id="de">My Favorite Desktop Environments</h2>
+                            <ul>
+                                <li>Budgie! Budgie is a DE that looks similar to Windows, but is better in a number of ways.
+                                    <br>It can be found running on a number of distros, including Ubuntu Budgie, Solus (the flagship distro using Budgie), and Manjaro Linux.
+                                    <a href="https://github.com/solus-project/budgie-desktop">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>GNOME! Some regard it as a somewhat "heavier" environment (meaning it uses up more resources compared to other DEs. Compared to Windows, its still a lightweight. GNOME's flagship distro is Fedora, but it can be found running
+                                    on literally almost anything. It takes some getting used to but once one gets used to the different window management, GNOME is rock-solid.
+                                    <a href="https://www.gnome.org">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>KDE! A DE for more advanced users, as it exposes almost every switch you could possibly want to toggle in the GUI without having to do terminal wizardry. KDE's flagship distro is KDE Neon, and it's developed by the same
+                                    team who makes the DE itself
+                                    <a href="https://kde.org">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>Cinnamon! A desktop environment that has it's claim to fame in Linux Mint-- An Ubuntu-based Linux distribution that's great for beginners!
+                                    <a href="https://linuxmint.com/">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>Unity! Unity was used by Canonical for Ubuntu in version prior to 18.04. in Ubuntu 18.04 Unity was abandoned in favor of GNOME (but with heavy customizations)
+                                    <a href="https://www.ubuntu.com/">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h2 class="Headers" id="bad">The Worst Versions of Windows</h2>
+
+                            <ul>
+                                <li>Windows Versions prior to 3.1-- These versions of Windows had very little in the way of multitasking. Wanted to overlap windows? You can't. Windows can only be tiled. After Windows 3.1, overlapped windows were enabled as
+                                    a feature.
+                                    <a href="https://winworldpc.com/product/windows-3/31">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>Windows ME-- Windows Millenium Edition is Windows 98, with all of the bad parts and a pastel color scheme. It was <em>b a d</em>
+                                    <a href="https://winworldpc.com/product/windows-me/final">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>Windows Vista-- Windows 7's disgraced cousin. 7 is everything Vista tried to be. but alas, Vista was a touch too ambitious. The system requirements were high, and crashes were rampant!</li>
+                                <li>Windows 8-- Windows 8 was also a disgraced cousin. Windows 10 is everything Windows 8 was supposed to be: A melding between a tablet-style UI and a desktop UI that actually works
+                                    <a href="https://en.wikipedia.org/wiki/Windows_8">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>Windows 2000-- Windows 2000 actually was not that bad. It was the business version of Windows ME, but it was built on a different kernel (the New Technology kernel, or NT kernel). Prior versions of Windows had essentially
+                                    been a layer over top of MS-DOS (MicroSoft-Disk Operating System), but Windows 2000 was the first time Windows could become independent of DOS. Tech pioneered with Windows 2000 first appeared in consumer releases of
+                                    Windows in Windows XP
+                                    <a href="https://en.wikipedia.org/wiki/Windows_8">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h2 class="Headers" id="fun">Fun Stuff</h2>
+
+                            <ul>
+                                <li>Star Wars, but text! If you go to any terminal emulator (excepting Windows Command Prompt and PowerShell. PuTTY can be used to get this easter egg on Windows)
+                                    <a href="https://lifehacker.com/watch-star-wars-in-text-via-telnet-373571">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>A picture of Apple Park in the Finder about window: Press and hold Option, then use the mouse and click "About the Finder". A picture of Apple Park will pop up instead of the usual About window.</li>
+                                <li>A Poem in TextEdit! If you look at the current icon for Text Edit in the macOS, it will have a poem in it! It reads as follows:
+                                    <italics>Dear Kate, Here’s to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes — the ones who see things differently. They’re not fond of rules and they have no respect for the status
+                                        quo. You can praise them, disagree with them, quote them, disbelieve them, glorify, or vilify them. About the only thing that you can’t do is ignore them. Because they change things. Take care,John Appleseed
+                                        <a href="http://www.eeggs.com/items/52406.html">
+                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                        </a>
+                                </li>
+                                <li>Cool slow-motion effects when interacting with a window! If you press and hold Shift, then interact with the Maximize or Minimize button, the action will be in slow motion!
+                                    <a href="http://www.eeggs.com/items/29318.html">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                                <li>When there is an in progress app download on macOS, the "date modified" field will read January 24, 1984. This date was the debut of the Macintosh!
+                                    <a href="https://mashable.com/2014/01/23/mac-easter-eggs/#xOldLm4nlgqI">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+                                            </button>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h2 class="Headers" id="google">Google Easter Eggs</h2>
+
+                            <ul>
+                                <li>When you type in "askew", the Google window will actually rotate to the side slightly.
+                                    <a href="https://www.google.com/search?source=hp&ei=bKSVXM34IMap5wKBiqT4CA&q=askew&btnK=Google+Search&oq=askew&gs_l=psy-ab.3...1792.2628..3101...0.0..0.0.0.......0....1..gws-wiz.....0."><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+										</button></a>
+                                </li>
+                                <li>Typing in Atari Breakout in a Google image search, and play away!
+                                    <a href="https://www.google.com/search?q=atari+breakout&hl=en&authuser=0&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwj9h4-fp5fhAhUK36QKHQsLBfQQ_AUIDigB&biw=1366&bih=635"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i>
+										</button></a>
+                                </li>
+                                <li>If you search for "the answer to life, the universe and everything", the Google calculator pops up with 42 in the screen.Its a reference to "Hitchhiker's Guide to the Galaxy"
+                                    <a href="https://www.google.com/search?q=the+answer+to+life+the+universe+and+everything&oq=the+an&aqs=chrome.0.69i59j69i61l3j69i57j0.1566j0j7&sourceid=chrome&ie=UTF-8"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i></button></a>
+                                </li>
+                                <li>Bletchly Park-- if you search for Bletchly Park on Google, the Knowledge Panel will have the name scrambled. It will then decode.
+                                    <a href="https://www.google.com/search?q=bletchley+park&oq=blet&aqs=chrome.0.69i59j69i57j0l4.1595j0j9&sourceid=chrome&ie=UTF-8"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i></button></a>
+                                </li>
+                                <li>Sonic the hedgehog in Google search! If you search for Sonic the Hedgehog, there will be an interactable Classic Sonic in the Knowledge Panel!
+                                    <a href="https://www.google.com/search?q=sonic+the+hedgehog&oq=sonic+&aqs=chrome.0.69i59j0j69i57j0l3.1760j0j7&sourceid=chrome&ie=UTF-8"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--raised mdl-button--accent"><i class="material-icons">arrow_right_alt</i></button></a>
+                                </li>
+                            </ul>
+
+                    </body>
+                    </div>
+            </main>
+            </div>
+
+            <head>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Teh Page of Many Linkz</title>
+            </head>
+            <!-- I've no frickin clue why this is down here and not up top. But he's staying because he works down here-->
+        </div>
     </main>
-    </div>
+</div>
+</div>
+</main>
+</div>
 
 </html>

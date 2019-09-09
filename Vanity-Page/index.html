@@ -1,117 +1,131 @@
+<!--This is still unfinished. I have no intention of finishing it and will probably take it offline to be perfectly honest-->
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-orange.min.css">
 <style type="text/css">
-.dronevid {
-	width: 501pt;
-	right: 1136px;
-}
+    .dronevid {
+        width: 501pt;
+        right: 1136px;
+    }
 </style>
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title>Vanity Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-<!-- Simple header with fixed tabs. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+    <!-- Simple header with fixed tabs. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
             mdl-layout--fixed-tabs">
-<header class="mdl-layout__header">
-  <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Vanity Page</span>
-    </div>
-    <!-- Tabs -->
-    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">About Me</a>
-      <a href="#fixed-tab-2" class="mdl-layout__tab">Linkz</a>
-      <a href="#fixed-tab-3" class="mdl-layout__tab">A Word on Drones</a>
-	  <a href="#fixed-tab-4" class="mdl-layout__tab">Interests</a>
-	  <a href="#fixed-tab-5" class="mdl-layout__tab">My School</a>
-	  <a href="#fixed-tab-6" class="mdl-layout__tab">Micellaneous Other Things</a>
-    </div>
-  </header>
-	  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Vanity Page</span>
-    <nav class="mdl-navigation">
-    <hr>  
-	<a class="mdl-navigation__link" href="https://abeeinspace.bitbucket.io">Back to Landing Page!</a>
-      <a class="mdl-navigation__link" href="https://abeeinspace.bitbucket.io/Links-Webpage">Links and Stuffs!</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
-      <div class="page-content"><!-- Square card -->
-<style>
-.demo-card-square.mdl-card {
-  width: 400px;
-  height: 400px;
-}
-.demo-card-square > .mdl-card__title {
-  color: #fff;
-  background:
-    url('https://drive.google.com/file/d/1cgHibSG_v9NbM0cT-a8-xtpuKshcKxvr/view') bottom right 15% no-repeat #46B6AC;
-}
-	.page-content{
-		margin: 20px
-	}
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Vanity Page</span>
+            </div>
+            <!-- Tabs -->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#fixed-tab-1" class="mdl-layout__tab is-active">About Me</a>
+                <a href="#fixed-tab-2" class="mdl-layout__tab">Linkz</a>
+                <a href="#fixed-tab-3" class="mdl-layout__tab">A Word on Drones</a>
+                <a href="#fixed-tab-4" class="mdl-layout__tab">Interests</a>
+                <a href="#fixed-tab-5" class="mdl-layout__tab">My School</a>
+                <a href="#fixed-tab-6" class="mdl-layout__tab">Micellaneous Other Things</a>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Vanity Page</span>
+            <nav class="mdl-navigation">
+                <hr>
+                <a class="mdl-navigation__link" href="https://abeeinspace.bitbucket.io">Back to Landing Page!</a>
+                <a class="mdl-navigation__link" href="https://abeeinspace.bitbucket.io/Links-Webpage">Links and Stuffs!</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+                <div class="page-content">
+                    <!-- Square card -->
+                    <style>
+                        .demo-card-square.mdl-card {
+                            width: 400px;
+                            height: 400px;
+                        }
+                        
+                        .demo-card-square>.mdl-card__title {
+                            color: #fff;
+                            background: url('https://drive.google.com/file/d/1cgHibSG_v9NbM0cT-a8-xtpuKshcKxvr/view') bottom right 15% no-repeat #46B6AC;
+                        }
+                        
+                        .page-content {
+                            margin: 20px
+                        }
+                    </style>
 
-</style>
+                    <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                        <div class="mdl-card__title mdl-card--expand">
+                            <h2 class="mdl-card__title-text">About Me!</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            I'm a junior at Sebring High School who is interested in all things band and computers. The easiest way to get my new computing projects is to take a peek at my GitHub, where I'm trying to upload all of my significant coding projects (This site will probably
+                            be going up there when I'm done or when I feel comfortable releasing this onto the wider 'Net)
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://www.github.com/ABeeinSpace" target="_blank">
+                My GitHub
+              </a>
+                        </div>
+                    </div>
+            </section>
+            <style>
+                .demo-card-square.mdl-card {
+                    width: 320px;
+                    height: 320px;
+                }
+                
+                .demo-card-square>.mdl-card__title {
+                    color: #fff;
+                    background: bottom right 15% no-repeat image(F: \Users\415750\Downloads\images\Code stock image.png);
+                }
+            </style>
 
-<div class="demo-card-square mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title mdl-card--expand">
-    <h2 class="mdl-card__title-text">About Me!</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    I'm a junior at Sebring High School who is interested in all things band and computers. The easiest way to get my new computing projects is to take a peek at my GitHub, where I'm trying to upload all of my significant coding projects (This site will probably be going up there when I'm done or when I feel comfortable releasing this onto the wider 'Net)
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://www.github.com/ABeeinSpace" target="_blank">
-      My GitHub
-    </a>
-</div>
-</div>
-    </section>
-<style>
-.demo-card-square.mdl-card {
-  width: 320px;
-  height: 320px;
-}
-.demo-card-square > .mdl-card__title {
-  color: #fff;
-  background:
-     bottom right 15% no-repeat image(F:\Users\415750\Downloads\images\Code stock image.png);
-}
-</style>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+                <div class="page-content">
+                    <h2>Links I use</h2>
+                    <ul>
+                        <li><a href="https://classroom.google.com">Google Classroom</a></li>
+                        <li><a href="https://google.com">The Google search engine itself.</a> Due to the prevalence of Chromebooks, I use Google exclusively for my research. No other company can have the integration that Google has because of Google's massively
+                            long product list. It's almost terrifying how much Google controls our everyday.</li>
+                        <li><a href="https://news.google.com"> Google News</a> Google has a news service that I use pretty exclusively due to my preference for Google's Material Theme design langauge (This very website is using Google's predecessor language
+                            because MT is hard to set up). The problem with this is that Google is known to lean different ways, so it is a very valid concern that Google would show biased news. The company has a "View full coverage" button that shows
+                            a variety of news sources</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+                <div class="page-content">
+                    <h2>Drones are a wonderful tool.</h2>
+                    They realy are. The problems arise when people decide that "New Technology is Evil and That is Final". Unfortunately, people have decided that drones as a technology are linked to spying and covert invasions of privacy, and that the technikigy is evil
+                    and only used by peeping toms and the NSA. This is simply not true. Drones have a variety of uses. They allow farmers to have a bird's eye view of their crop. They allow for a whole new sport--drone racing!
+                    <iframe width="400" height="444" src="https://www.youtube.com/embed/P3FZ0UI8jTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="dronevid"></iframe>
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-4">
+                <div class="page-content">
+                    <h2>What I do with My Life?</h2>
+                    <ul>
+                        <li>I drone mostly. I decline to tell if its droning on or if its flying a drone ; )</li>
+                        <li>I tweak software/upgrade hardware on my computers-- I own two computers, a desktop (that's a dinosaur. I might end up dropping an entirely new motherboard into the case), and my laptop. My laptop has already been upgraded (I switched
+                            from a spinner drive to a Samsung 840 EVO), and Im thinking about a RAM upgrade. </li>
+                        <li>I have a little bit mroe than a passing interest in photography--I have quite a few pictures of my lake-- but I don't consider it a hobby for me.</li>
+                    </ul>
+                </div>
+            </section>
 
-<section class="mdl-layout__tab-panel" id="fixed-tab-2">
-      <div class="page-content"><h2>Links I use</h2>
-        <ul>
-          <li><a href="https://classroom.google.com">Google Classroom</a></li>  
-            <li><a href="https://google.com">The Google search engine itself.</a> Due to the prevalence of Chromebooks, I use Google exclusively for my research. No other company can have the integration that Google has because of Google's massively long product list. It's almost terrifying how much Google controls our everyday.</li>
-            <li><a href="https://news.google.com"> Google News</a> Google has a news service that I use pretty exclusively due to my preference for Google's Material Theme design langauge (This very website is using Google's predecessor language because MT is hard to set up). The problem with this is that Google is known to lean different ways, so it is a very valid concern that Google would show biased news. The company has a "View full coverage" button that shows a variety of news sources</li>
-        </ul>
-      </div>
-		</section>
-    <section class="mdl-layout__tab-panel" id="fixed-tab-3">
-      <div class="page-content"><h2>Drones are a wonderful tool.</h2>
-		They realy are. The problems arise when people decide that "New Technology is Evil and That is Final". Unfortunately, people have decided that drones as a technology are linked to spying and covert invasions of privacy, and that the technikigy is evil and only used by peeping toms and the NSA. This is simply not true. Drones have a variety of uses. They allow farmers to have a bird's eye view of their crop. They allow for a whole new sport--drone racing!
-        <iframe width="400" height="444" src="https://www.youtube.com/embed/P3FZ0UI8jTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="dronevid"></iframe>
-      </div>
-    </section>
-	<section class="mdl-layout__tab-panel" id="fixed-tab-4">
-      <div class="page-content"><h2>What I do with My Life?</h2>
-		<ul>
-			<li>I drone mostly. I decline to tell if its droning on or if its flying a drone ; )</li>
-			<li>I tweak software/upgrade hardware on my computers-- I own two computers, a desktop (that's a dinosaur. I might end up dropping an entirely new motherboard into the case), and my laptop. My laptop has already been upgraded (I switched from a spinner drive to a Samsung 840 EVO), and Im thinking about a RAM upgrade. </li>
-			<li>I have a little bit mroe than a passing interest in photography--I have quite a few pictures of my lake-- but I don't consider it a hobby for me.</li>
-		</ul>
-      </div>
-    </section>	
-		
-  </main>
-</div>
+        </main>
+        </div>
 </body>
+
 </html>
