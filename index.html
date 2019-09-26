@@ -4,215 +4,246 @@
 <head>
     <title>Aidan's iPortfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-orange.min.css" /> 
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 </head>
-
 <style>
     .page-content {
         margin: 20px;
         background-color: white
-}
+    }
     
     .header {
         color: rgb(255, 193, 7);
-}
+    }
     
     html {
         scroll-behavior: smooth;
-}    
+    }
+    
     #about-card {
         position: relative;
         float: right;
         margin: 10px;
-}
+    }
     
     .demo-layout-transparent {
         background: url('https://images.unsplash.com/photo-1553080478-b70267c283c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80') center / cover;
-}
+    }
     
     .demo-layout-transparent .mdl-layout__header,
     .demo-layout-transparent .mdl-layout__drawer-button {
         /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
         color: white;
-}
+    }
     
     .mdl-navigation__link {
         background-color: black opacity;
-}
+    }
+    
+    ;
     #ScrollToTop {
         display: none;
         cursor: pointer;
         bottom: 20px;
         right: 30px;
         z-index: 99;
-}
-
+    }
+    
+    .mdl-layout__drawer-button {
+        background: white;
+        opacity: 0.95;
+        box-shadow: 1px 1px 1px gray;
+    }
+    
     .mdl-mini-footer {
         box-shadow: 1px 1px 1px gray;
-}
-</style>
-<body>
-<!-- Uses a header that scrolls with the text, rather than staying locked at the top -->
-<div class="mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--scroll">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">A Website</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation -->
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#intro">Intro</a>
-        <a class="mdl-navigation__link" href="#dev">dev</a>
-        <a class="mdl-navigation__link" href="#not-dev">Not Dev</a>
-        <a class="mdl-navigation__link" href="#photography">Photos</a>
-        <a class="mdl-navigation__link" href="#goals">Goals</a>
-        <a class="mdl-navigation__link" href="#current">Current Stuff</a>
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">A Website</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="/Links-Webpage/">Links Webpage</a>
-      <a class="mdl-navigation__link" href="/writing/index.html">Writing</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="page-content"><h2 id="intro">Introduction</h2>
-    This is a page where I intend to have a homepage of sorts for a web portfolio! Included will be links to all of the stuff that I post to my BitBucket repository (I did have a GitHub but my school blocks it [Thanks FLDOE!]. They do not block BitBucket however, so here I am). Eventually this page will scroll for ages and there will be stuff on the side to jump to. The next goal is to get it to smooth-scroll to them, but that probably needs some JavaScript, which I don't know whatsoever. It'll be repurposed StackExchange code probably. :P <p><strike>So this is cool! I got the header working now! Problem is when I commit it'll actually not work anymore cuz I can't figure out how to upload an image using BitBucket. Stop laughing.</strike></p> 
-    <p><strike> I got it working fully! Now I need accessibility tweaks so the text is legible.</strike> Got the header where I want it! I'm probably about to freeze development on the header except to add new entries when I add more content. I'm really proud of it I'm not gonna lie.</p>
-<!--Info card -->
-<style>
-.demo-card-square.mdl-card {
-   width: 320px;
-   height: 320px;
-}
-                        
-.demo-card-square>.mdl-card__title {
-   color: #fff;
-   background: url('../assets/demos/dog.png') bottom right 15% no-repeat #708090;
-}
-</style>
-
-<div class="demo-card-square mdl-card mdl-shadow--2dp" id="about-card">
-   <div class="mdl-card__title mdl-card--expand">
-     <h2 class="mdl-card__title-text">About Me!</h2>
-</div>
-<div class="mdl-card__supporting-text">
-    I'm a Junior in high school in Florida! This is a website where I'll put up my escapades in web development and other shenanigans. My BitBucket will house web development and my GitHub will house other development projects (they'll move to BitBucket as I need them for school. Actually my most current work will be on BitBucket, so it's linked here first)
-</div>
-<div class="mdl-card__actions mdl-card--border">
- <!-- Button Chip -->
-<a href="https://bitbucket.org/ABeeinSpace" button type="button" class="mdl-chip" target="_blank">
-    <span class="mdl-chip__text">My BitBucket</span></a>
-<a href="https://www.github.com/abeeinspace" button type="button" class="mdl-chip" target="blank">
-    <span class="mdl-chip__text">My GitHub</span></a>
-</div>
-<h2 id="dev">My Escapades in Dev Work</h2>
-   <p>I went to a summer camp at Stetson, where I learned some Python. Unfortunately, I've forgotten most of it simply because I haven't used it. Same with C#, and I've forgotten that one nearly entirely. HTML and CSS however, I think I'm pretty good at.</p>
-<h2 id="not-dev">Computer Work Besides Development</h2>
-    <p>I hold Microsoft Office Specialist 2013 certifications in Word, Excel, PowerPoint, OneNote, and Outlook, and I hold MOS Master based on a Word Expert certification. (Note that it's only for 2013).</p>
-    <p>I have a Dell Inspiron 2-in-1, running 2 operating systems. One is Windows 10 1904 and the other one is Solus Linux. Solus is an up and coming Linux distribution using the Budgie desktop environment. Budgie is built on the GNOME 3.32 stack. More information can be found <a href='https://getsol.us'>here</a>.</p>
-<h2 id="photography">Photography</h2>
-    <p>One thing I have an interest in is photography. I have a lake behind my house so it's really easy for me to get some AMAZING photography. Some of it is below:</p>
-<div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--4-col">
-<!-- Image card 1-->
-<style>
-    .demo-card-image>.mdl-card__actions {
-        height: 52px;
-        padding: 16px;
-        background: rgba(0, 0, 0, 0.2);
-    }                                
-    .demo-card-image__filename {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 500;
     }
 </style>
-<style>
-    .demo-card-image.mdl-card,
-    #img-card-2 {
-        width: 256px;
-        height: 256px;
-        background: url('https://lh3.googleusercontent.com/eGErPKvE09JMO0srwJRtcqmYnZl7BUtmUkJvGNt1njhkOYxUu3LGt4eMcAmEkfvaPWyPM9_JD75CezrGzKiOtN3Jr3CzJdXdkcyQ_DD7t0zIljqsbND3l0NRiJ7OYrx6HXI1utxn7wpLX40mL8TuIeCIWYEvv11pn-vwSwpngXl2453qCSZ9j4fmfcoqyhrIeFYcMdS5_5S4X0EQg7RMGOJ41oAwKZGYcTfo20I4ldH8iUUvdlJ1BanwJ-Dl5L0fbXe0H-n-r7HbW5eY4DrU9m9duKvyMT64_tQherRQT3i81dGovuLiUUjlW54-j0Vi5LIBL3_vcR5mEmtcnoLg2hHq38-WlW5mJ8r6_MeuzAhDTCrt4d3VuJqfcPb0kZKwg6yNhoA9_yWpWOy7Ff83SFZnrQT9PMFIASSAR7HBVEB6RFDlRFX91vOXr4brfg8ybNJPifYLasWeG_amBu3T09Ku9m7IWmYSfYLGO7LrISioIiuCDLzt6gq7Hft5xjpt43W6QyuvgjZCyAdhx_SijX8R20pubNvVluaOap1s5sh29fQGoBjk8rwLXLvZA_4LqxIpnG9DMxL9wldhQO_xD_4IfIzdQaEMrYhTBLrgIl-d6k4uo6IlR22Y9O5jlGCBGgtFffjk_YjPLhKgIub30nXnlDgEILfpL0jBsfY5IJCsc58BUKHVUaW-7FOKIT1vfo5LRZk8TzlUIDw372R9YGC3=w890-h667-no') center / cover;
-}
-                                
-    .demo-card-image>.mdl-card__actions {
-        height: 52px;
-        padding: 16px;
-        background: rgba(0, 0, 0, 0.2);
-}                                
-    .demo-card-image__filename {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 500;
-}
-</style>
-<div class="demo-card-image mdl-card mdl-shadow--2dp" id="img-card-2">
-    <div class="mdl-card__title mdl-card--expand"></div>
-        <div class="mdl-card__actions">
-            <span class="demo-card-image__filename">Lake Drone Photo</span>
+
+<body>
+    <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
+    <div class=" mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+        <div class="mdl-layout__drawer mdl-layout__header--scroll mdl-layout__header--transparent demo-layout-transparent">
+            <span class="mdl-layout-title" style="color:white;">A Website</span>
+            <nav class="mdl-navigation">
+                <div class="nav-items mdl-shadow--8dp">
+                    <a class="mdl-navigation__link mdl-js-ripple-effect" href="#intro" style="color:black;background-color:white;opacity: 1;">Introduction</a>
+                    <a class="mdl-navigation__link mdl-js-ripple-effect" href="#dev" style="color:black;background-color:white;opacity: 1;">Development Work</a>
+                    <a class="mdl-navigation__link mdl-js-ripple-effect" href="#not-dev" style="color:black;background-color:white;opacity: 1;">Other Computer Crap</a>
+                    <a class="mdl-navigation__link mdl-js-ripple-effect" href="#photography" style="color:black;background-color:white;opacity: 1;">Photography</a>
+                    <a class="mdl-navigation__link mdl-js-ripple-effect" href="#goals" style="color:black;background-color:white;opacity: 1;">Goals</a>
+                    <a class="mdl-navigation__link mdl-js-ripple-effect" href="#current" style="color:black;background-color:white;opacity: 1;">Current Projects</a>
+                </div>
+                <div class="nav-items mdl-shadow--16dp">
+                    <!--These links will NOT work locally for some reason. Once it is pushed to the server it *should* work-->
+                    <hr style="color:white;">
+                    <a class="mdl-navigation__link mdl-js-ripple-effect" href="/Links-Webpage" style="color:black;background-color:white;opacity: 1;" target="_blank">Links-Webpage</a>
+                    <a class="mdl-navigation__link mdl-js-ripple-effect" href="/writing/index.html" style="color:black;background-color:white;opacity:1;" target="_blank">Writing</a>
+                </div>
+            </nav>
         </div>
-    </div>
-</div>
-<div class="mdl-cell mdl-cell--4-col">
-<!-- Image card -->
-<style>
-    .demo-card-image.mdl-card,
-    #img-card-3 {
-    width: 256px;
-    height: 256px;
-    background: url('https://lh3.googleusercontent.com/59fBYTnz3y3xIzba-b5HxV27Mt_gc_tzgfzAw5pWHDg1Yd1AjeH_V9lyQC8EWO3CaHAzX0rinuwiOdTLSp83XBWBM4OXjzhR5S0n5Zg3z42do2hPx5M0JxVSJvEbiRvyW5cLQ7ejVGo_8CPC9bDaXuT-fJn2ut_YSlmv-Lz6DtVi5Qu_qlc9X9ESLWHl388yIfR1seEbMaaVoD_z-x7OCZ5cEYPpJVHbloyPS4X2n3zqCLMPwb5NWvKqthzYpexyd-sU59QDpbti7zv6WfAhUYd98d8zJN2k5kUrFq8uUtm1wdZmVoBeRwI6Ysw0QCCQYe3cYML0uiQ2gL-oor8mX3ojOOS2G7NKVSQRoMobuvHBW_US43s1Lojh73e_BxuFpJ_DMyJ_BEjjJdQ98TggLm4ideKsVPpDzPDifr6fa2H2q-VDDzf3Rv5hyO-WriPW2CA3s04rDPUkFVQkUvzsUn9NFtOqx-RmnhbcHVcGkCaBfVDHuXesRD9NzeJR-EXyhCqK_o7JIT-8d_tahxbvhSGfq2P6HTp2sXCJWuIFHMbny1k0UnNfzl7Zk2UydcEp5rl7GIOfjRmGr-burOr5K4n3MuHaRFG09oiPh1Ncie3XKcsP1UEqRenA79murKb6t-RB06aSNYenmb7oh9fnFZB2OhgbylG0-8ynn8FYThRxllAGthxAEp9akz4f-iB76_3gkw9PmYuUiCvyAH5Hv9X7=w890-h667-no') center / cover;
-}
-    .demo-card-image>.mdl-card__actions {
-         height: 52px;
-         padding: 16px;
-         background: rgba(0, 0, 0, 0.2);
-}
+        <main class="mdl-layout__content">
+            <!--Everything that I want displayed should be within the page-content div. body-text was meant to do something with the background but honestly I don't remember if it still works-->
+            <div class="page-content">
+                <div class="body-text">
+                    <h2 id="intro">Introduction</h2>
+                    This is a page where I intend to have a homepage of sorts for a web portfolio! Included will be links to all of the stuff that I post to my BitBucket repository (I did have a GitHub but my school blocks it [Thanks FLDOE!]. They do not block BitBucket
+                    however, so here I am). Eventually this page will scroll for ages and there will be stuff on the side to jump to. The next goal is to get it to smooth-scroll to them, but that probably needs some JavaScript, which I don't know whatsoever.
+                    It'll be repurposed StackExchange code probably. :P
+                    <p><strike>So this is cool! I got the header working now! Problem is when I commit it'll actually not work
+              anymore cuz I can't figure out how to upload an image using BitBucket. Stop laughing.</strike></p>
+                    <p><strike> I got it working fully! Now I need accessibility tweaks so the text is legible.</strike> Got the header where I want it! I'm probably about to freeze development on the header except to add new entries when I add more content.
+                        I'm really proud of it I'm not gonna lie.</p>
+                    <!--Info card -->
+                    <style>
+                        .demo-card-square.mdl-card {
+                            width: 320px;
+                            height: 320px;
+                        }
+                        
+                        .demo-card-square>.mdl-card__title {
+                            color: #fff;
+                            background: url('../assets/demos/dog.png') bottom right 15% no-repeat #708090;
+                        }
+                    </style>
+
+                    <div class="demo-card-square mdl-card mdl-shadow--2dp" id="about-card">
+                        <div class="mdl-card__title mdl-card--expand">
+                            <h2 class="mdl-card__title-text">About Me!</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            I'm a Junior in high school in Florida! This is a website where I'll put up my escapades in web development and other shenanigans. My BitBucket will house web development and my GitHub will house other development projects (they'll move to BitBucket as
+                            I need them for school. Actually my most current work will be on BitBucket, so it's linked here first)
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <!-- Button Chip -->
+                            <a href="https://bitbucket.org/ABeeinSpace" button type="button" class="mdl-chip" target="_blank">
+                                <span class="mdl-chip__text">My BitBucket</span></a>
+                            <a href="https://www.github.com/abeeinspace" button type="button" class="mdl-chip" target="blank">
+                                <span class="mdl-chip__text">My GitHub</span></a>
+
+                        </div>
+                    </div>
+                    <h2 id="dev">My Escapades in Dev Work</h2>
+                    <p>I went to a summer camp at Stetson, where I learned some Python. Unfortunately, I've forgotten most of it simply because I haven't used it. Same with C#, and I've forgotten that one nearly entirely. HTML and CSS however, I think I'm
+                        pretty good at.</p>
+                    <h2 id="not-dev">Computer Work Besides Development</h2>
+                    <p>I hold Microsoft Office Specialist 2013 certifications in Word, Excel, PowerPoint, OneNote, and Outlook, and I hold MOS Master based on a Word Expert certification. (Note that it's only for 2013).</p>
+                    <p>I have a Dell Inspiron 2-in-1, running 2 operating systems. One is Windows 10 1904 and the other one is Solus Linux. Solus is an up and coming Linux distribution using the Budgie desktop environment. Budgie is built on the GNOME 3.32
+                        stack. More information can be found <a href='https://getsol.us'>here</a>.</p>
+                    <h2 id="photography">Photography</h2>
+                    <p>One thing I have an interest in is photography. I have a lake behind my house so it's really easy for me to get some AMAZING photography. Some of it is below:</p>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <!-- Image card 1-->
+                            <style>
+                                .demo-card-image>.mdl-card__actions {
+                                    height: 52px;
+                                    padding: 16px;
+                                    background: rgba(0, 0, 0, 0.2);
+                                }
                                 
-     .demo-card-image__filename {
-         color: #fff;
-         font-size: 14px;
-         font-weight: 500;
-}
-</style>
-<div class="demo-card-image mdl-card mdl-shadow--2dp" id="img-card-3">
-    <div class="mdl-card__title mdl-card--expand"></div>
-        <div class="mdl-card__actions">
-            <span class="demo-card-image__filename">Downtown</span>
-        </div>
-    </div>
-</div>
-<h2></h2>
-</button>
-<h2 id="goals">What I'm planning on doing after high school</h2>
-    <p>I plan to go to FL Polytechnic University to study cybersecurity. After that, I'll probably join up with different companies to help shore up the nation against cyberthreats. </p>
-    <p>My eventual plan is to go work for Google's Project Zero. Google formed the cybersecurity task force after a vulnerability in Microsoft's Internet Explorer 6 allowed Google to be compromised. This is the only time Google has been breached, which is a very impressive achievement considering how lucrative of a target they must be. Project Zero ensures that Google and its users won't get screwed over based off of another company's negligence.</p>
-<h2 id="current">What I'm Working on Now</h2>
-    <p>I'm working on a few things. For one, I'm working on this very website. I'm also working on website for a school club (but hosted on another BitBucket account entirely, since my username on this one isn't the most professional out there. Having another account also makes leadership handoff easier). I'm working on not much outside of that, but I'm planning on trying to teach myself Powershell scripting. This would be useful when I change systems (set up my own preferences quickly and easily via Powershell) or go to new installations of Windows. I'm also planning on getting together some community outreach, but it will probably be through the school club, so I won't go into much detail here.
-    </p>
-<footer class="mdl-mini-footer">
-    <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo">Aidan's iPortfolio</div>
-    <ul class="mdl-mini-footer__link-list">
-        <li>The photo behind the navigation pane is NOT my work. It's by <a href="https://unsplash.com/@rolandsvarsbergs" target="_blank">Rolands Varsbergs on Unsplash!</a>
-        </li>
-        <li>The CSS and parts of the HTML markup used on this site is part of Google's Material Design Lite. It's licensed under the Apache license, which can be found <a href='/license.txt'>here</a></li>
-    </ul>
-    </div>
-</footer>
+                                .demo-card-image__filename {
+                                    color: #fff;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                }
+                            </style>
+
+                            <style>
+                                .demo-card-image.mdl-card,
+                                #img-card-2 {
+                                    width: 256px;
+                                    height: 256px;
+                                    background: url('https://lh3.googleusercontent.com/eGErPKvE09JMO0srwJRtcqmYnZl7BUtmUkJvGNt1njhkOYxUu3LGt4eMcAmEkfvaPWyPM9_JD75CezrGzKiOtN3Jr3CzJdXdkcyQ_DD7t0zIljqsbND3l0NRiJ7OYrx6HXI1utxn7wpLX40mL8TuIeCIWYEvv11pn-vwSwpngXl2453qCSZ9j4fmfcoqyhrIeFYcMdS5_5S4X0EQg7RMGOJ41oAwKZGYcTfo20I4ldH8iUUvdlJ1BanwJ-Dl5L0fbXe0H-n-r7HbW5eY4DrU9m9duKvyMT64_tQherRQT3i81dGovuLiUUjlW54-j0Vi5LIBL3_vcR5mEmtcnoLg2hHq38-WlW5mJ8r6_MeuzAhDTCrt4d3VuJqfcPb0kZKwg6yNhoA9_yWpWOy7Ff83SFZnrQT9PMFIASSAR7HBVEB6RFDlRFX91vOXr4brfg8ybNJPifYLasWeG_amBu3T09Ku9m7IWmYSfYLGO7LrISioIiuCDLzt6gq7Hft5xjpt43W6QyuvgjZCyAdhx_SijX8R20pubNvVluaOap1s5sh29fQGoBjk8rwLXLvZA_4LqxIpnG9DMxL9wldhQO_xD_4IfIzdQaEMrYhTBLrgIl-d6k4uo6IlR22Y9O5jlGCBGgtFffjk_YjPLhKgIub30nXnlDgEILfpL0jBsfY5IJCsc58BUKHVUaW-7FOKIT1vfo5LRZk8TzlUIDw372R9YGC3=w890-h667-no') center / cover;
+                                }
+                                
+                                .demo-card-image>.mdl-card__actions {
+                                    height: 52px;
+                                    padding: 16px;
+                                    background: rgba(0, 0, 0, 0.2);
+                                }
+                                
+                                .demo-card-image__filename {
+                                    color: #fff;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                }
+                            </style>
+
+                            <div class="demo-card-image mdl-card mdl-shadow--2dp" id="img-card-2">
+                                <div class="mdl-card__title mdl-card--expand"></div>
+                                <div class="mdl-card__actions">
+                                    <span class="demo-card-image__filename">Lake Drone Photo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <!-- Image card -->
+                            <style>
+                                .demo-card-image.mdl-card,
+                                #img-card-3 {
+                                    width: 256px;
+                                    height: 256px;
+                                    background: url('https://lh3.googleusercontent.com/59fBYTnz3y3xIzba-b5HxV27Mt_gc_tzgfzAw5pWHDg1Yd1AjeH_V9lyQC8EWO3CaHAzX0rinuwiOdTLSp83XBWBM4OXjzhR5S0n5Zg3z42do2hPx5M0JxVSJvEbiRvyW5cLQ7ejVGo_8CPC9bDaXuT-fJn2ut_YSlmv-Lz6DtVi5Qu_qlc9X9ESLWHl388yIfR1seEbMaaVoD_z-x7OCZ5cEYPpJVHbloyPS4X2n3zqCLMPwb5NWvKqthzYpexyd-sU59QDpbti7zv6WfAhUYd98d8zJN2k5kUrFq8uUtm1wdZmVoBeRwI6Ysw0QCCQYe3cYML0uiQ2gL-oor8mX3ojOOS2G7NKVSQRoMobuvHBW_US43s1Lojh73e_BxuFpJ_DMyJ_BEjjJdQ98TggLm4ideKsVPpDzPDifr6fa2H2q-VDDzf3Rv5hyO-WriPW2CA3s04rDPUkFVQkUvzsUn9NFtOqx-RmnhbcHVcGkCaBfVDHuXesRD9NzeJR-EXyhCqK_o7JIT-8d_tahxbvhSGfq2P6HTp2sXCJWuIFHMbny1k0UnNfzl7Zk2UydcEp5rl7GIOfjRmGr-burOr5K4n3MuHaRFG09oiPh1Ncie3XKcsP1UEqRenA79murKb6t-RB06aSNYenmb7oh9fnFZB2OhgbylG0-8ynn8FYThRxllAGthxAEp9akz4f-iB76_3gkw9PmYuUiCvyAH5Hv9X7=w890-h667-no') center / cover;
+                                }
+                                
+                                .demo-card-image>.mdl-card__actions {
+                                    height: 52px;
+                                    padding: 16px;
+                                    background: rgba(0, 0, 0, 0.2);
+                                }
+                                
+                                .demo-card-image__filename {
+                                    color: #fff;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                }
+                            </style>
+
+                            <div class="demo-card-image mdl-card mdl-shadow--2dp" id="img-card-3">
+                                <div class="mdl-card__title mdl-card--expand"></div>
+                                <div class="mdl-card__actions">
+                                    <span class="demo-card-image__filename">Downtown</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2></h2>
+          </button>
+                    <h2 id="goals">What I'm planning on doing after high school</h2>
+                    <p>I plan to go to FL Polytechnic University to study cybersecurity. After that, I'll probably join up with different companies to help shore up the nation against cyberthreats. </p>
+
+                    <p>My eventual plan is to go work for Google's Project Zero. Google formed the cybersecurity task force after a vulnerability in Microsoft's Internet Explorer 6 allowed Google to be compromised. This is the only time Google has been breached,
+                        which is a very impressive achievement considering how lucrative of a target they must be. Project Zero ensures that Google and its users won't get screwed over based off of another company's negligence.</p>
+
+                    <h2 id="current">What I'm Working on Now</h2>
+                    <p>I'm working on a few things. For one, I'm working on this very website. I'm also working on website for a school club (but hosted on another BitBucket account entirely, since my username on this one isn't the most professional out
+                        there. Having another account also makes leadership handoff easier). I'm working on not much outside of that, but I'm planning on trying to teach myself Powershell scripting. This would be useful when I change systems (set up my
+                        own preferences quickly and easily via Powershell) or go to new installations of Windows. I'm also planning on getting together some community outreach, but it will probably be through the school club, so I won't go into much detail
+                        here.
+                    </p>
+
+                    <footer class="mdl-mini-footer">
+                        <div class="mdl-mini-footer__left-section">
+                            <div class="mdl-logo">Aidan's iPortfolio</div>
+                            <ul class="mdl-mini-footer__link-list">
+                                <li>The photo behind the navigation pane is NOT my work. It's by <a href="https://unsplash.com/@rolandsvarsbergs" target="_blank">Rolands Varsbergs on Unsplash!</a>
+                                </li>
+                                <li>The CSS and parts of the HTML markup used on this site is part of Google's Material Design Lite. It's licensed under the Apache license, which can be found <a href='/LICENSE.txt'>here</a></li>
+                            </ul>
+                        </div>
+                    </footer>
+
                 </div>
             </div>
         </main>
-  </main>
-</div>
-</div>
+    </div>
+
 </body>
 
 </html>
