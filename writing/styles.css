@@ -223,13 +223,13 @@ body .demo-blog {
 .demo-blog .on-the-road-again .mdl-card__media {
   background-image: url('images/road.jpg');
 }
-.demo-blog .shopping .mdl-card__media {
+.demo-blog .mdl-card__media {
   background-image: url('images/shopping.jpg');
 }
-.mdl-card__media_young {
+.young {
   background-image: url('images/road1.jpg');
 }
-.mdl-card__media_hope {
+.hope {
   background-image: url('images/coffee.jpg');
 }
 .demo-blog .demo-blog__posts > .demo-nav {
