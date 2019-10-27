@@ -183,6 +183,18 @@ body .demo-blog {
 .demo-blog .coffee-pic .mdl-card__media {
   background-image: url('images/lake.jpg');
 }
+#hope{
+  background-image: url('images/hope\ cover\ image\ \(COMPRESSED\).jpeg');
+}
+#young {
+  background-image: url('images/road1.jpg');
+}
+#paper {
+  background-image: url('images/building.jpg');
+}
+#scars {
+  background-image: url('images/bg1.jpg');
+}
 .demo-blog .something-else .mdl-card__media {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -223,7 +235,7 @@ body .demo-blog {
 .demo-blog .on-the-road-again .mdl-card__media {
   background-image: url('images/road.jpg');
 }
-.demo-blog .shopping .mdl-card__media {
+.demo-blog .shopping mdl-card__media {
   background-image: url('images/shopping.jpg');
 }
 .demo-blog .demo-blog__posts > .demo-nav {
