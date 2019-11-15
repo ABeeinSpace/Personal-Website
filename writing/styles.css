@@ -198,6 +198,9 @@ body .demo-blog {
 #lake {
   background-image: url('images/lake.jpg');
 }
+#light {
+  background-image: url('images/light.jpg');
+}
 .demo-blog .something-else .mdl-card__media {
   display: -webkit-flex;
   display: -ms-flexbox;
