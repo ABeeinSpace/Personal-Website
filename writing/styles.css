@@ -204,6 +204,9 @@ body .demo-blog {
 #sos {
   background-image: url('images/rain.jpg');
 }
+#misunderstanding{
+  background-image: url('images/rain.jpg');
+}
 .demo-blog .something-else .mdl-card__media {
   display: -webkit-flex;
   display: -ms-flexbox;
