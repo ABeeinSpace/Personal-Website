@@ -388,7 +388,8 @@
 html {
   color: rgba(0,0,0, 0.87);
   font-size: 1em;
-  line-height: 1.4; }
+  line-height: 1.4; 
+  scroll-behavior: smooth;}
 
 /*
  * Remove text-shadow in selection highlight:
