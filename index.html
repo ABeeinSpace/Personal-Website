@@ -4,8 +4,10 @@
 <head>
     <title>Aidan's iPortfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="./mdl/dark.css">
-    <script defer src="./mdl/material.js"></script>
+    <link rel="stylesheet" title="default" id="light" href="./mdl/light.css">
+    <link rel="alternate stylesheet" title="alternate" id="dark" href="./mdl/dark.css">
+    <script src="./mdl/styleSwitcher.js"></script>
+    <script src="./mdl/material.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal site for a high school student in Florida." <meta charset="UTF-8">
 </head>
@@ -13,7 +15,7 @@
 
 </style>
 
-<body>
+<body onload="set_style_from_cookie()">
     <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
     <div class=" mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
         <div
@@ -22,7 +24,7 @@
             <nav class="mdl-navigation">
                 <div class="nav-items mdl-shadow--8dp">
                     <a class="mdl-navigation__link" href="#intro">Introduction</a>
-                    <a class="mdl-navigation__link" href="#dev"">Development Work</a>
+                    <a class="mdl-navigation__link" href="#dev">Development Work</a>
                     <a class="mdl-navigation__link" href="#not-dev">Other Computer Crap</a>
                     <a class="mdl-navigation__link" href="#photography">Photography</a>
                     <a class="mdl-navigation__link" href="#goals">Goals</a>
@@ -36,9 +38,8 @@
                     <a class="mdl-navigation__link" href="/writing/index.html" target="_blank"
                         rel="noreferrer">Writing</a>
                 </div>
-                <button>
-                    <i id="stylesToggle" class="material-icons">wb_sunny</i>
-                </button>
+                <button type="button" onclick="switch_style('alternate');return false;" name="theme" value="Dark Mode" id="darkModeButton" class="mdl-navigation__link">Dark Mode</button>
+                <button type="button" onclick="switch_style('default');return false;" name="lightTheme" value="Light Mode" id="lightModeButton" class="material-icons mdl-navigation__link">wb_sunny</button>
             </nav>
         </div>
         <main class="mdl-layout__content">
@@ -120,6 +121,8 @@
         </main>
     </div>
 </body>
+<script>
+</script>
 <!--Hi! If you've found this, good on you! No. really, good job! I didn't expect anyone to actually look in the developer tools in a browser besides myself! Either that, or you've hit "View Source" or found my BitBucket! So now that you're here, I'm gonna show you somethin cool! On macOS or Linux, type "telnet towel.blinkenlights.nl". On Windows, you might need extra software such as PuTTY. Sit back and enjoy Star Wars in ASCII! 
 -->
 </html>
