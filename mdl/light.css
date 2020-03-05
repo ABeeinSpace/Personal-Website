@@ -7570,9 +7570,7 @@ input.mdl-button[type="submit"] {
       .mdl-layout--fixed-drawer > .mdl-layout__drawer-button,
       .mdl-layout--no-drawer-button .mdl-layout__drawer-button {
         display: none; } }
-        :root {
-          color-scheme: light dark;
-      }    
+  
       .page-content {
           margin: 20px;
           background-color: white
