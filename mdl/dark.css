@@ -456,6 +456,20 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+#LlightModeButton {
+ position: absolute;
+ left: 0.5rem;
+ bottom: 1rem;
+ align-self: flex-end;
+ z-index: 99;
+}
+#darkModeButton{
+ position: absolute;
+ bottom: 1rem;
+ right: 0.5rem;
+ align-self: flex-end;
+ z-index: 99;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
