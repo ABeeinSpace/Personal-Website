@@ -464,7 +464,7 @@ textarea {
  z-index: 99;
 }
 #darkModeButton{
- position: absolute;
+ position: relative;
  bottom: 1rem;
  right: 0.5rem;
  align-self: flex-end;

@@ -456,14 +456,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
    #LlightModeButton {
-    position: absolute;
+    position: relative;
     left: 0.5rem;
     bottom: 1rem;
     align-self: flex-end;
     z-index: 99;
    }
    #darkModeButton{
-    position: absolute;
+    position: relative;
     bottom: 1rem;
     right: 0.5rem;
     align-self: flex-end;
