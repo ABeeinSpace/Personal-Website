@@ -456,20 +456,20 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-#LlightModeButton {
- position: absolute;
- left: 0.5rem;
- bottom: 1rem;
- align-self: flex-end;
- z-index: 99;
-}
-#darkModeButton{
- position: relative;
- bottom: 1rem;
- right: 0.5rem;
- align-self: flex-end;
- z-index: 99;
-}
+   #LlightModeButton {
+    position: relative;
+    left: 0.5rem;
+    bottom: 1rem;
+    align-self: flex-end;
+    z-index: 99;
+   }
+   #darkModeButton{
+    position: relative;
+    bottom: 1rem;
+    right: 0.5rem;
+    align-self: flex-end;
+    z-index: 99;
+   }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -842,6 +842,7 @@ main {
 html, body {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 14px;
+  font-display: fallback;
   font-weight: 400;
   line-height: 20px; }
 
