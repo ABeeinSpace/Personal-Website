@@ -6012,6 +6012,9 @@ input.mdl-button[type="submit"] {
     text-decoration: none;
     white-space: nowrap; }
 
+    .mdl-mini-footer--link-list a:hover, .mdl-mini-footer__link-list a:hover {
+      color: whitesmoke;
+      }
 .mdl-mini-footer--left-section,
 .mdl-mini-footer__left-section {
   display: inline-block;
