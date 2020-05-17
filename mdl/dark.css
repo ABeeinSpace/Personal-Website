@@ -4319,13 +4319,6 @@ input.mdl-button[type="submit"] {
   right: 16px;
   top: 16px; }
 
-.demo-card-image.mdl-card,
-#img-card-2 {
-      width: 256px;
-      height: 256px;
-      background: url('https://lh3.googleusercontent.com/eGErPKvE09JMO0srwJRtcqmYnZl7BUtmUkJvGNt1njhkOYxUu3LGt4eMcAmEkfvaPWyPM9_JD75CezrGzKiOtN3Jr3CzJdXdkcyQ_DD7t0zIljqsbND3l0NRiJ7OYrx6HXI1utxn7wpLX40mL8TuIeCIWYEvv11pn-vwSwpngXl2453qCSZ9j4fmfcoqyhrIeFYcMdS5_5S4X0EQg7RMGOJ41oAwKZGYcTfo20I4ldH8iUUvdlJ1BanwJ-Dl5L0fbXe0H-n-r7HbW5eY4DrU9m9duKvyMT64_tQherRQT3i81dGovuLiUUjlW54-j0Vi5LIBL3_vcR5mEmtcnoLg2hHq38-WlW5mJ8r6_MeuzAhDTCrt4d3VuJqfcPb0kZKwg6yNhoA9_yWpWOy7Ff83SFZnrQT9PMFIASSAR7HBVEB6RFDlRFX91vOXr4brfg8ybNJPifYLasWeG_amBu3T09Ku9m7IWmYSfYLGO7LrISioIiuCDLzt6gq7Hft5xjpt43W6QyuvgjZCyAdhx_SijX8R20pubNvVluaOap1s5sh29fQGoBjk8rwLXLvZA_4LqxIpnG9DMxL9wldhQO_xD_4IfIzdQaEMrYhTBLrgIl-d6k4uo6IlR22Y9O5jlGCBGgtFffjk_YjPLhKgIub30nXnlDgEILfpL0jBsfY5IJCsc58BUKHVUaW-7FOKIT1vfo5LRZk8TzlUIDw372R9YGC3=w890-h667-no') center / cover;
-  }
-
 .demo-card-image>.mdl-card__actions {
     height: 52px;
     padding: 16px;
@@ -4348,6 +4341,13 @@ input.mdl-button[type="submit"] {
     width: 256px;
     height: 256px;
     background: url('https://lh3.googleusercontent.com/eGErPKvE09JMO0srwJRtcqmYnZl7BUtmUkJvGNt1njhkOYxUu3LGt4eMcAmEkfvaPWyPM9_JD75CezrGzKiOtN3Jr3CzJdXdkcyQ_DD7t0zIljqsbND3l0NRiJ7OYrx6HXI1utxn7wpLX40mL8TuIeCIWYEvv11pn-vwSwpngXl2453qCSZ9j4fmfcoqyhrIeFYcMdS5_5S4X0EQg7RMGOJ41oAwKZGYcTfo20I4ldH8iUUvdlJ1BanwJ-Dl5L0fbXe0H-n-r7HbW5eY4DrU9m9duKvyMT64_tQherRQT3i81dGovuLiUUjlW54-j0Vi5LIBL3_vcR5mEmtcnoLg2hHq38-WlW5mJ8r6_MeuzAhDTCrt4d3VuJqfcPb0kZKwg6yNhoA9_yWpWOy7Ff83SFZnrQT9PMFIASSAR7HBVEB6RFDlRFX91vOXr4brfg8ybNJPifYLasWeG_amBu3T09Ku9m7IWmYSfYLGO7LrISioIiuCDLzt6gq7Hft5xjpt43W6QyuvgjZCyAdhx_SijX8R20pubNvVluaOap1s5sh29fQGoBjk8rwLXLvZA_4LqxIpnG9DMxL9wldhQO_xD_4IfIzdQaEMrYhTBLrgIl-d6k4uo6IlR22Y9O5jlGCBGgtFffjk_YjPLhKgIub30nXnlDgEILfpL0jBsfY5IJCsc58BUKHVUaW-7FOKIT1vfo5LRZk8TzlUIDw372R9YGC3=w890-h667-no') center / cover;
+}
+
+.demo-card-image.mdl-card,
+#img-card-1 {
+    width: 256px;
+    height: 256px;
+    background: url('/writing/images/lake-night.jpeg') center / cover;
 }
 
 /**
