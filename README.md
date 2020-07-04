@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e0104807-a92a-4f36-9d1b-4ee530f7c567/deploy-status)](https://app.netlify.com/sites/abeeinspace/deploys)
 # Hi!
 I'm Aidan, a high school junior in Florida! This repository is going to house all of my web development adventures (or at least the stuff I'm comfortable putting online). There's some photography, there's my laptop, there's a buncha stuff! 
 ## About the Repository
