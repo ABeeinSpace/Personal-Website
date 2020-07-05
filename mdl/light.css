@@ -389,7 +389,7 @@ html {
   color: rgba(0,0,0, 0.87);
   font-size: 1em;
   line-height: 1.4; 
-  scroll-behavior: smooth;}
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -468,6 +468,69 @@ textarea {
     right: 0.5rem;
     align-self: flex-end;
     z-index: 99;
+   }
+
+   .mdl-mini-footer--link-list a:hover, .mdl-mini-footer__link-list a:hover {
+    color: whitesmoke;
+    }
+    .mdl-navigation__link {
+      color:black;
+      background-color:white;
+      opacity: 1;
+    }
+    .page-content {
+      margin: 20px;
+      background-color: white
+  }
+      
+  .header {
+      color: rgb(255, 193, 7);
+  }
+      
+  html {
+      scroll-behavior: smooth;
+  }
+      
+  #about-card {
+      position: relative;
+      float: right;
+      margin: 10px;
+  }
+      
+  .demo-layout-transparent {
+      background: url('https://images.unsplash.com/photo-1553080478-b70267c283c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80') center / cover;
+  }
+      
+  .demo-layout-transparent .mdl-layout__header,
+  .demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+  your background is light. */
+      color: white;
+  }
+      
+  .mdl-navigation__link {
+      background-color: black opacity;
+  }
+  
+  #ScrollToTop {
+      display: none;
+      cursor: pointer;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+  }
+      
+  .mdl-layout__drawer-button {
+      background: white;
+      opacity: 0.95;
+      box-shadow: 1px 1px 1px gray;
+  }
+      
+  .mdl-mini-footer {
+      box-shadow: 1px 1px 1px gray;
+  }
+   @media (prefers-color-scheme: dark) {
+      
    }
 /* ==========================================================================
    Helper classes
@@ -6012,9 +6075,7 @@ input.mdl-button[type="submit"] {
     text-decoration: none;
     white-space: nowrap; }
 
-    .mdl-mini-footer--link-list a:hover, .mdl-mini-footer__link-list a:hover {
-      color: whitesmoke;
-      }
+
 .mdl-mini-footer--left-section,
 .mdl-mini-footer__left-section {
   display: inline-block;
@@ -7417,11 +7478,8 @@ input.mdl-button[type="submit"] {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0;
-  opacity: 0.87; 
-  color:black;
-  background-color:white;
-  opacity: 1;
+  letter-spacing: 0; 
+
 }
   .mdl-navigation__link .material-icons {
     vertical-align: middle; }
@@ -7487,7 +7545,6 @@ input.mdl-button[type="submit"] {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   border-right: 1px solid rgb(224,224,224);
-  background: rgb(250,250,250);
   -webkit-transform: translateX(-250px);
           transform: translateX(-250px);
   -webkit-transform-style: preserve-3d;
@@ -7588,57 +7645,7 @@ input.mdl-button[type="submit"] {
       .mdl-layout--no-drawer-button .mdl-layout__drawer-button {
         display: none; } }
   
-      .page-content {
-          margin: 20px;
-          background-color: white
-      }
-          
-      .header {
-          color: rgb(255, 193, 7);
-      }
-          
-      html {
-          scroll-behavior: smooth;
-      }
-          
-      #about-card {
-          position: relative;
-          float: right;
-          margin: 10px;
-      }
-          
-      .demo-layout-transparent {
-          background: url('https://images.unsplash.com/photo-1553080478-b70267c283c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80') center / cover;
-      }
-          
-      .demo-layout-transparent .mdl-layout__header,
-      .demo-layout-transparent .mdl-layout__drawer-button {
-      /* This background is dark, so we set text to white. Use 87% black instead if
-      your background is light. */
-          color: white;
-      }
-          
-      .mdl-navigation__link {
-          background-color: black opacity;
-      }
-      
-      #ScrollToTop {
-          display: none;
-          cursor: pointer;
-          bottom: 20px;
-          right: 30px;
-          z-index: 99;
-      }
-          
-      .mdl-layout__drawer-button {
-          background: white;
-          opacity: 0.95;
-          box-shadow: 1px 1px 1px gray;
-      }
-          
-      .mdl-mini-footer {
-          box-shadow: 1px 1px 1px gray;
-      }
+
 .mdl-layout__header {
   display: -webkit-flex;
   display: -ms-flexbox;
