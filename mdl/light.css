@@ -455,32 +455,32 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   #LlightModeButton {
-    position: relative;
-    left: 0.5rem;
-    bottom: 1rem;
-    align-self: flex-end;
-    z-index: 99;
-   }
-   #darkModeButton{
-    position: relative;
-    bottom: 1rem;
-    right: 0.5rem;
-    align-self: flex-end;
-    z-index: 99;
-   }
+  #LlightModeButton {
+  position: relative;
+  left: 0.5rem;
+  bottom: 1rem;
+  align-self: flex-end;
+  z-index: 99;
+  }
+  #darkModeButton{
+  position: relative;
+  bottom: 1rem;
+  right: 0.5rem;
+  align-self: flex-end;
+  z-index: 99;
+  }
 
-   .mdl-mini-footer--link-list a:hover, .mdl-mini-footer__link-list a:hover {
-    color: whitesmoke;
-    }
-    .mdl-navigation__link {
-      color:black;
-      background-color:white;
-      opacity: 1;
-    }
-    .page-content {
-      margin: 20px;
-      background-color: white
+  .mdl-mini-footer--link-list a:hover, .mdl-mini-footer__link-list a:hover {
+  color: whitesmoke;
+  }
+  .mdl-navigation__link {
+    color:black;
+    background-color:white;
+    opacity: 1;
+  }
+  .page-content {
+    margin: 20px;
+    background-color: white
   }
       
   .header {
@@ -507,6 +507,9 @@ textarea {
   your background is light. */
       color: white;
   }
+  /* .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    background-color: rgba(76, 74, 74, 0.87); 
+    color: rgb(250, 250, 250, 0.87);} */
       
   .mdl-navigation__link {
       background-color: black opacity;
@@ -529,9 +532,9 @@ textarea {
   .mdl-mini-footer {
       box-shadow: 1px 1px 1px gray;
   }
-   @media (prefers-color-scheme: dark) {
-      
-   }
+@media (prefers-color-scheme: dark) {
+
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
