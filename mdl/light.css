@@ -498,7 +498,7 @@ textarea {
   }
       
   .demo-layout-transparent {
-      background: url('https://images.unsplash.com/photo-1553080478-b70267c283c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80') center / cover;
+      background: url('/images/Rocket-Lab-R3D2-Liftoff.jpg') center / cover;
   }
       
   .demo-layout-transparent .mdl-layout__header,
