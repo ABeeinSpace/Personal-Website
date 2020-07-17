@@ -559,7 +559,7 @@ textarea {
     }
   @media (prefers-color-scheme: dark) {
     .mdl-navigation__link {
-      background-color: black opacity;
+      background-color: black;
     }
     .mdl-layout__drawer-button {
       background: white;
