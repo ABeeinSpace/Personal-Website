@@ -4974,7 +4974,8 @@ input.mdl-button[type=submit] {
 @media screen and (max-width: 1024px) {
     .mdl-layout__drawer-button {
         margin:4px;
-        color: rgba(0,0,0,.5)
+        color: whitesmoke;
+        background-color: rgb(75,75,75);
     }
 }
 
