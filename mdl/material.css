@@ -562,6 +562,9 @@ textarea {
       color: whitesmoke;
       background-color: #787676 !important;
     }
+    .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+      color: whitesmoke;
+    }
     .mdl-navigation__link {
       background-color: black;
     }
@@ -586,11 +589,11 @@ textarea {
     }
     .mdl-card__title {
       color: rgb(255,255,255,0.87);
-      /* background-color: rgb(66,66,66); */
+      background-color: rgb(66,66,66);
     }
     .mdl-card__supporting-text {
-     /* color: rgba(255,255,255, 0.54); */
-     background-color: rgb(66,66,66);
+      color: rgba(255,255,255, 0.54 ) !important;
+      background-color: rgb(66,66,66);
     }
     .mdl-chip {
       background-color: #545151;
