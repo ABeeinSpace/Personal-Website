@@ -558,6 +558,10 @@ textarea {
         box-shadow: 1px 1px 1px gray;
     }
   @media (prefers-color-scheme: dark) {
+    .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+      color: whitesmoke;
+      background-color: #787676 !important;
+    }
     .mdl-navigation__link {
       background-color: black;
     }
@@ -7617,16 +7621,17 @@ input.mdl-button[type="submit"] {
     .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
       display: block;
       -webkit-flex-shrink: 0;
-          -ms-flex-negative: 0;
-              flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
       padding: 16px 40px;
       margin: 0;
-      color: #757575; }
+      }
       @media screen and (max-width: 1024px) {
         .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
           padding: 16px 16px; } }
       .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
-        background-color: rgb(224,224,224); }
+        background-color: rgb(224 224 224);
+        }
       .mdl-layout__drawer .mdl-navigation .mdl-navigation__link--current {
         background-color: rgb(224,224,224);
         color: rgb(0,0,0); }
