@@ -587,6 +587,7 @@
      .mdl-card__supporting-text {
        color: rgb(255,255,255, 0.54) !important;
        background-color: rgb(66,66,66);
+       padding: 16px 18px !important;
      }
      .mdl-card__actions {
        background-color: rgb(66,66,66) !important;
