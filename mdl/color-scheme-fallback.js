@@ -1,3 +1,3 @@
-import Darkmode from 'darkmode-js';
+import Darkmode from './node-modules/src/darkmode-js';
 
 new Darkmode().showWidget();
