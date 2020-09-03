@@ -3994,3 +3994,12 @@ componentHandler.register({
     widget: false
 });
 }());
+
+$('.fixed-header').on('click',function(e){
+  var $scrollingElement = $('.scrolling-element');
+
+  $scrollingElement.css('overflow','hidden');
+  $scrollingElement.animate({ scrollTop: 0 }, "fast", function() {
+      $scrollingElement.css('overflow','auto');
+  });
+});
