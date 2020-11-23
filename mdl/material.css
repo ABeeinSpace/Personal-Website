@@ -545,7 +545,13 @@
       width: 256px;
       height: 256px;
       background: url('/images/IMG_4010.jpeg') center / cover;
-  }
+    }
+  .demo-card-image.mdl-card,
+  #img-card-5{ 
+      width: 256px;
+      height: 256px;
+      background: url('/images/DJI_0096.jpeg') center / cover;
+    }
   
     .mdl-layout__drawer-button {
         background: rgb(255, 255, 255);
